@@ -1,3 +1,4 @@
 h2. Haraka Plugins
 
 * "Haraka-CouchDB":http://github.com/maxogden/haraka-couchdb - Store incoming mail in CouchDB
+* "Haraka API Server":https://github.com/KellyLSB/Haraka-API-Server - Give your Haraka an outgoing API access comparable to PostmarkApp over HTTP POST.
