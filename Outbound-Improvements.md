@@ -8,6 +8,10 @@ Currently on a restart, with cluster enabled, the parent process reads the queue
 
 Implement outbound rate limiting a-la plugins/rate_limit plugin.
 
+## Implement connection pooling
+
+e.g. pool connections by [destination MX | IP address | domain name] 
+
 ## Tools
 
 Implement tools for flushing the queue (force every item to be sent now), emptying the queue, and listing the queue.
