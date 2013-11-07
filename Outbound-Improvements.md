@@ -4,6 +4,10 @@ Things that need done to Outbound.js to make it more capable
 
 Currently on a restart, with cluster enabled, the parent process reads the queue (directory) and sets itself up to send all the mails in the queue. We should have the parent process farm out that task to each child in a round-robin fashion.
 
+## Nominate a specific child to handle destination domain traffic
+
+Using something like node-hash-ring to decide which Haraka child handles outbound traffic for a destination domain would make it easier to limit concurrency and pool connections by domain and would make running a queue for a specific domain easier (this could be done via IPC from the master process.
+
 ## Rate limits
 
 Implement outbound rate limiting a-la plugins/rate_limit plugin.
