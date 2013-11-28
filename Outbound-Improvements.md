@@ -25,3 +25,8 @@ Implement tools for flushing the queue (force every item to be sent now), emptyi
 ## Improve exponential back-off algorithm on 4xx failures.
 
 We currently just do a "multiply by two" approach to this. We should do something a bit smarter.
+
+## Supporting and delegating to multiple nodes
+
+Support having multiple load balanced nodes (cluster), and preferably distribute the queue between the nodes.
+To support dynamic scaling of the number of nodes there should be some kind of manager on top that makes sure that all queue items are handled somewhere
