@@ -9,3 +9,4 @@ Please follow these style conventions:
 * Use underscores\_to\_separate\_names (yes this goes against JS conventions - it's the way it has always been done)
 * Do not [cuddle elses](http://c2.com/cgi/wiki?CuddledElseBlocks)
 * Be liberal with whitespace between operators - we prefer `if (foo > bar)` over `if(foo>bar)`
+* But not too liberal: spaces immediately inside the parens are frowned upon.
