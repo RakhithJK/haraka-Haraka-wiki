@@ -9,4 +9,5 @@ Please follow these style conventions:
 * Use underscores\_to\_separate\_names (yes this goes against JS conventions - it's the way it has always been done)
 * Do not [cuddle elses](http://c2.com/cgi/wiki?CuddledElseBlocks)
 * Use whitespace between operators - we prefer `if (foo > bar)` over `if(foo>bar)`
-* Don't comment out lines of code, remove them as they will be in the revision history
+* Don't comment out lines of code, remove them as they will be in the revision history anyway.
+* Use boolean true/false instead of numeric 0/1
