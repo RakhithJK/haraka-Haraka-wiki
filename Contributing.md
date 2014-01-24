@@ -11,3 +11,7 @@ Please follow these style conventions:
 * Use whitespace between operators - we prefer `if (foo > bar)` over `if(foo>bar)`
 * Don't comment out lines of code, remove them as they will be in the revision history anyway.
 * Use boolean true/false instead of numeric 0/1
+
+Additionally:
+ 
+* Any new features must be documented
