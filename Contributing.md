@@ -1,6 +1,12 @@
 We love and value outside contributions to Haraka.
 
-If you wish to contribute, please use the Github "Pull Request" mechanism - fork the project, create a branch for your changes, commit and push them to your repository, and click on "Create Pull Request" for that branch in Github.
+### If you wish to contribute, please use the Github "Pull Request" mechanism
+
+1. fork the project (git clone https://github.com/baudehlo/Haraka.git)
+1. create a branch for your changes (git checkout -b new_branch)
+1. make changes and commit (git commit)
+1. push changes to github (git push)
+1. click on "Create Pull Request" for that branch in Github.
 
 ### General Guidelines
 
