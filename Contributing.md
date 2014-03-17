@@ -2,6 +2,11 @@ We love and value outside contributions to Haraka.
 
 If you wish to contribute, please use the Github "Pull Request" mechanism - fork the project, create a branch for your changes, commit and push them to your repository, and click on "Create Pull Request" for that branch in Github.
 
+Additionally:
+
+* New features **must** be documented
+* New features **should** include tests
+
 Please follow these style conventions:
 
 * 4 spaces for indentation (no tabs)
@@ -9,9 +14,5 @@ Please follow these style conventions:
 * Use underscores\_to\_separate\_names (yes this goes against JS conventions - it's the way it has always been done)
 * Do not [cuddle elses](http://c2.com/cgi/wiki?CuddledElseBlocks)
 * Use whitespace between operators - we prefer `if (foo > bar)` over `if(foo>bar)`
-* Don't comment out lines of code, remove them as they will be in the revision history anyway.
+* Don't comment out lines of code, remove them as they will be in the revision history.
 * Use boolean true/false instead of numeric 0/1
-
-Additionally:
- 
-* Any new features must be documented
