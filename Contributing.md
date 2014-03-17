@@ -2,7 +2,7 @@ We love and value outside contributions to Haraka.
 
 If you wish to contribute, please use the Github "Pull Request" mechanism - fork the project, create a branch for your changes, commit and push them to your repository, and click on "Create Pull Request" for that branch in Github.
 
-Additionally:
+General Guidelines:
 
 * New features **must** be documented
 * New features **should** include tests
