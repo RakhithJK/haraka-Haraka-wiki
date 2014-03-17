@@ -2,12 +2,12 @@ We love and value outside contributions to Haraka.
 
 If you wish to contribute, please use the Github "Pull Request" mechanism - fork the project, create a branch for your changes, commit and push them to your repository, and click on "Create Pull Request" for that branch in Github.
 
-### General Guidelines:
+### General Guidelines
 
 * New features **must** be documented
 * New features **should** include tests
 
-### Please follow these style conventions:
+### Style conventions
 
 * 4 spaces for indentation (no tabs)
 * Semi-colons on the end of statements are preferred
