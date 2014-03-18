@@ -22,3 +22,8 @@ We love and value outside contributions to Haraka.
 * Use whitespace between operators - we prefer `if (foo > bar)` over `if(foo>bar)`
 * Don't comment out lines of code, remove them as they will be in the revision history.
 * Use boolean true/false instead of numeric 0/1
+
+## Tests
+
+* run all tests: ./run_tests  (or "npm test")
+* run tests for a single plugin: ./run_tests tests/plugins/bounce.js
