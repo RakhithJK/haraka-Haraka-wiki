@@ -1,4 +1,3 @@
-
 1.  How can I make sure that all desktop client connections are secured via TLS and are never allowed to even attempt plain text authentication?
 
 This is the default for Haraka. In fact, there's not even an option to enable authentication without SSL. Here's how you can confirm this for yourself:
