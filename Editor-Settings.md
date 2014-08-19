@@ -1,7 +1,7 @@
-# vim
+## vim
 
-1. Install [Syntastic](https://github.com/scrooloose/syntastic)
-2. Add these settings to ~/.vimrc
+### Install [Syntastic](https://github.com/scrooloose/syntastic)
+### Settings for ~/.vimrc
 
     execute pathogen#infect()
     
@@ -24,7 +24,7 @@
     let g:syntastic_auto_loc_list=1
     let g:syntastic_javascript_checkers = ['jshint']
 
-# [JSHint](http://www.jshint.com)
+### [JSHint](http://www.jshint.com)
 
 JSHint is a better match for the style used by the principal authors than JSLint. JSlint styled code is quite acceptable, but expect resistance if you alter existing code solely to conform to JSLint conventions.
 
