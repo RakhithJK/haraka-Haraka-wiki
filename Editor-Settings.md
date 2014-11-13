@@ -26,5 +26,7 @@
 
 ### [JSHint](http://www.jshint.com)
 
+There is a .jshintrc file in the root directory of the repo. Some code editors are smart enough to use it and highlight coding errors for you, which we encourage.
+
 JSHint is a better match for the style used by the principal authors than JSLint. JSlint styled code is quite acceptable, but expect resistance if you alter existing code solely to conform to JSLint conventions.
 
