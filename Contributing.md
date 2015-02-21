@@ -20,7 +20,7 @@ cd Haraka
 git checkout -b new_branch
 $EDITOR server.js
 git add server.js
-git commit -m 'fixed bug in server.js' -m 'under this one condition, X happened and I fixed it by making it do Y instead. I believe this should be the default'
+git commit
 git commit -m 'added test coverage for last commit'
 git commit -m 'fixed bug discovered in testing'
 git rebase -i origin
@@ -29,7 +29,11 @@ git push origin new_branch
 
 The `git commit` step(s) will launch you into `$EDITOR` where the first line should be a summary of the change(s) in less than 50 characters. Additional paragraphs can be added starting on line 3. Alternatively, the summary can be specified as the first -m argument and subsequent paragraphs can be specified as additional -m arguments (as shown).
 
-Where a branch has more than one commit, it's usually best to squash them into a single commit during the `git rebase` step. Alternatively, with each subsequent commit, append the --amend flag to `git commit`.
+Where a branch has more than one commit, it's usually best to squash them during the `git rebase` step. Alternatively, with each subsequent commit, append the --amend flag to `git commit`. Notable exceptions the single commit guideline are:
+
+* where there are multiple logical changes, put each in a commit (easier to review and revert)
+* whitespace changes belong in their own commit
+* no-op code refactoring is separate from functional changes
 
 To submit new_branch as a Pull Request, visit the [Haraka project page](https://github.com/baudehlo/Haraka) where your recently pushed branches will appear with a green "Pull Request" button.
 
