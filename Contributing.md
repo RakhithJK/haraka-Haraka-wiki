@@ -1,12 +1,37 @@
 We love and appreciate contributions to Haraka.
 
-### To contribute, please use the Github "Pull Request" mechanism
+### To contribute, use the Github "Pull Request" mechanism
 
-1. fork the project (git clone https://github.com/baudehlo/Haraka.git)
-1. create a branch for your changes (git checkout -b new_branch)
-1. make changes and commit (git commit)
-1. push changes to github (git push)
-1. click on "Create Pull Request" for that branch in Github.
+#### Overview
+
+1. fork, by clicking the Fork button on the [GitHub Project Page](https://github.com/baudehlo/Haraka)
+2. checkout a copy
+3. create a branch
+4. make changes
+5. push changes to your fork
+6. submit Pull Request
+
+#### Detailed Example
+
+```sh
+export GHUSERNAME=CHANGE_THIS
+git clone https://github.com/$GHUSERNAME/Haraka.git
+cd Haraka
+git checkout -b new_branch
+$EDITOR server.js
+git add server.js
+git commit -m 'fixed bug in server.js'
+git commit -m 'added test coverage for last commit'
+git commit -m 'fixed bug discovered in testing'
+git rebase -i origin
+git push origin new_branch
+```
+
+The `git commit` step(s) will launch you into `$EDITOR` where the first line should be a summary of the change(s) in less than 50 characters. Additional paragraphs can be added starting on line 3.
+
+If you have a more than one commit, squash them into a single commit during the `git rebase` step. Alternatively, with each subsequent commit, append the --amend flag to `git commit`.
+
+To submit new_branch as a Pull Request, visit the [Haraka project page](https://github.com/baudehlo/Haraka) where your recently pushed branches will appear with a green "Pull Request" button.
 
 ### General Guidelines
 
