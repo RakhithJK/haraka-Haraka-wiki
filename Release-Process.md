@@ -8,3 +8,7 @@ For rolling new Haraka releases:
 1. ...
 1. ...
 1. npm publish
+
+## Automation
+
+Most of these steps are currently manual. Documenting the process is the first step towards automating it.
