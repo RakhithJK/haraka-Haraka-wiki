@@ -7,6 +7,8 @@ For rolling new Haraka releases:
 1. Update Public Suffix List
 1. ...
 1. ...
+1. Bump version in package.json
+1. git tag v<release_number>; git push --tags
 1. npm publish
 
 ## Automation
