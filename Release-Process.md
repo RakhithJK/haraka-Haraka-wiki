@@ -14,3 +14,7 @@ For rolling new Haraka releases:
 ## Automation
 
 Most of these steps are currently manual. Documenting the process is the first step towards automating it.
+
+### Automation Ideas
+* https://github.com/skywinder/github-changelog-generator
+* GitHub Releases [haraka](https://github.com/baudehlo/Haraka/releases)
