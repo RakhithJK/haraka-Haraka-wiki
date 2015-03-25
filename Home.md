@@ -10,6 +10,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 # How To
 * [[Google Safe Browsing]]
 * [[Setting up TLS with CA certificates]]
+* [Configure my Editor](Editor Settings)
 * [Contribute](Contributing)
 * [Roll a Release](Release Process)
 
