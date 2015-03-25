@@ -11,6 +11,9 @@ Get rid of that awful nano default editor:
 sudo update-alternatives --config editor
 ```
 
+# Prereq services
+Note that any of these services can be installed in other [virtual] machines and accessed over the network. Assembling in such a fashion makes it very easy to scale your system by applying the necessary resources exactly where they're needed.
+
 ## Install Unbound
 Mail servers need a fast, reliable and DNS server. [Unbound][unbound-site] is all of that and more.
 ```sh
@@ -32,6 +35,17 @@ sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin
 update-rc.d spamassassin enable
 service spamassassin start
 ```
+
+# Install Haraka
+
+## Haraka prereqs
+
+```sh
+apt-get install -y nodejs npm redis-server
+ln /usr/bin/nodejs /usr/bin/node
+npm install -g Haraka
+```
+
 
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
