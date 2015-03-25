@@ -4,8 +4,8 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 # Install Guides
 
-* [[Ubuntu]]
-* [FreeBSD](http://www.tnpi.net/wiki/MT6_SMTP)
+* [[Ubuntu 14.04]]
+* [FreeBSD 10](http://www.tnpi.net/wiki/MT6_SMTP)
 
 # How To
 * [[Google Safe Browsing]]
