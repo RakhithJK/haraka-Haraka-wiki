@@ -61,6 +61,7 @@ npm install -g ws express
 npm install -g maxmind-geolite-mirror
 mkdir -p /usr/local/share/GeoIP
 /usr/local/bin/maxmind-geolite-mirror
+ln -s /usr/local/bin/maxmind-geolite-mirror /etc/cron.weekly/
 ```
 
 [unbound-site]: https://unbound.net
