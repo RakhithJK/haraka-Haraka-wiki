@@ -56,6 +56,12 @@ apt-get install -y p0f
 npm install -g ws express
 ```
 
+### GeoIP
+```sh
+npm install -g maxmind-geolite-mirror
+mkdir -p /usr/local/share/GeoIP
+/usr/local/bin/maxmind-geolite-mirror
+```
 
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
