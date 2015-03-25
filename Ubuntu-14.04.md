@@ -12,7 +12,7 @@ sudo update-alternatives --config editor
 ```
 
 # Prereq services
-Note that any of these services can be installed in other [virtual] machines and accessed over the network. Assembling in such a fashion makes it very easy to scale your system by applying the necessary resources exactly where they're needed.
+Note that any of these [optional] services can be installed and run in other [virtual] machines and accessed over the network. For large installs, where clustering is likely, isolating these services makes it easier to scale the system by applying additional resources exactly where they're needed.
 
 ## Install Unbound
 Mail servers need a fast, reliable and DNS server. [Unbound][unbound-site] is all of that and more.
