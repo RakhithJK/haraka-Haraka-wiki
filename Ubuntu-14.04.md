@@ -23,8 +23,14 @@ apt-get install -y unbound
 apt-get install -y clamd
 ```
 
-
+# Install SpamAssassin
+[SpamAssassin][spamd-site] is a spam scanning engine. It's written in perl, needs lots of resources, but is still very helpful. It is called via the [spamassassin][spamd-plugin] plugin.
+```sh
+apt-get install -y spamassassin
+```
 
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
 [clamd-plugin]: https://github.com/baudehlo/Haraka/blob/master/plugins/clamd.js
+[spamd-site]: https://spamassassin.apache.org
+[spamd-plugin]: https://github.com/baudehlo/Haraka/blob/master/plugins/spamassassin.js
