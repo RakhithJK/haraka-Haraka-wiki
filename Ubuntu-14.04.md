@@ -83,13 +83,12 @@ perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\nda
 ```
 
 
-## Other goodies, for extra special features
+### p0f
+Enables remote host OS detection, and other connection params.
 ```sh
 apt-get install -y p0f
 /usr/sbin/p0f &
 echo '@reboot /usr/sbin/p0f -i eth0 -Q /tmp/.p0f_socket -t -o /tmp/p0f.log -d "dst port 25 or dst port 587 or dst port 465"' >> /etc/crontab
-
-npm install -g ws express
 ```
 
 ### GeoIP
@@ -99,6 +98,12 @@ mkdir -p /usr/local/share/GeoIP
 /usr/local/bin/maxmind-geolite-mirror
 ln -s /usr/local/bin/maxmind-geolite-mirror /etc/cron.weekly/
 ```
+
+### More
+```sh
+npm install -g ws express
+```
+
 
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
