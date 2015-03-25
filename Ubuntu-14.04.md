@@ -5,25 +5,25 @@
 * Software selection:
     * OpenSSH server
 
-# Customize $EDITOR
+## Customize $EDITOR
 Get rid of that awful nano default editor:
 ```sh
 sudo update-alternatives --config editor
 ```
 
-# Install Unbound
+## Install Unbound
 Mail servers need a fast, reliable and DNS server. [Unbound][unbound-site] is all of that and more.
 ```sh
 apt-get install -y unbound
 ```
 
-# Install ClamAV
+## Install ClamAV
 [ClamAV][clamav-site] is a virus scanner. Haraka will use it via the [clamd][clamd-plugin] plugin.
 ```sh
-apt-get install -y clamd
+apt-get install -y clamd clamav-daemon
 ```
 
-# Install SpamAssassin
+## Install SpamAssassin
 [SpamAssassin][spamd-site] is a spam scanning engine. It's written in perl, needs lots of resources, but is still very helpful. It is called via the [spamassassin][spamd-plugin] plugin.
 ```sh
 apt-get install -y spamassassin
