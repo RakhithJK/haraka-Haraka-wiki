@@ -27,8 +27,8 @@ apt-get install -y clamav-daemon
 [SpamAssassin][spamd-site] is a spam scanning engine. It's written in perl, needs lots of resources, but is still very helpful. It is called via the [spamassassin][spamd-plugin] plugin.
 ```sh
 apt-get install -y spamassassin
-sed -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
-sed -e 's/CRON=0/CRON=1/' /etc/default/spamassassin 
+sed -i.bak -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
+sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin 
 ```
 
 [unbound-site]: https://unbound.net
