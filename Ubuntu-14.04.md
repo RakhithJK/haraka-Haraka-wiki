@@ -50,8 +50,9 @@ ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g Haraka
 ```
 
-## Optional, for "special features"
+## Other goodies, for extra special features
 ```sh
+apt-get install -y p0f
 npm install -g ws express
 ```
 
