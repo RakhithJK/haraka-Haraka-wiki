@@ -1,1 +1,1 @@
-[Home](wiki) 
+[Home](https://github.com/baudehlo/Haraka/wiki) | [[Install Guides]]
