@@ -43,7 +43,16 @@ service spamassassin start
 ```sh
 apt-get install -y nodejs npm redis-server
 ln -s /usr/bin/nodejs /usr/bin/node
+```
+
+## Haraka
+```sh
 npm install -g Haraka
+```
+
+## Optional, for "special features"
+```sh
+npm install -g ws express
 ```
 
 
