@@ -9,6 +9,7 @@ Welcome to the Haraka wiki!
 # How To
 * [[Google Safe Browsing]]
 * [[Setting up TLS with CA certificates]]
+* [Roll a Release](Release Process)
 
 # Future Plans / TODO
 * [[Outbound Improvements]]
