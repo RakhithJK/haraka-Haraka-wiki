@@ -85,6 +85,9 @@ perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\nda
 ## Other goodies, for extra special features
 ```sh
 apt-get install -y p0f
+/usr/sbin/p0f &
+echo '@reboot /usr/sbin/p0f &' >> /etc/crontab
+
 npm install -g ws express
 ```
 
