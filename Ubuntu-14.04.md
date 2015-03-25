@@ -21,9 +21,10 @@ apt-get install -y unbound
 ```
 
 ## Install ClamAV
-[ClamAV][clamav-site] is a virus scanner. Haraka will use it via the [clamd][clamd-plugin] plugin.
+[ClamAV][clamav-site] is a virus scanner. Haraka will use it via the [clamd][clamd-plugin] plugin. When configuring, make sure to enable TCP connections.
 ```sh
 apt-get install -y clamav-daemon
+dpkg-reconfigure clamav-base
 ```
 
 ## Install SpamAssassin
