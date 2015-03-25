@@ -87,7 +87,7 @@ perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\nda
 ```sh
 apt-get install -y p0f
 /usr/sbin/p0f &
-echo '@reboot /usr/sbin/p0f &' >> /etc/crontab
+echo '@reboot /usr/sbin/p0f -i eth0 -Q /tmp/.p0f_socket -t -o /tmp/p0f.log -d "dst port 25 or dst port 587 or dst port 465"' >> /etc/crontab
 
 npm install -g ws express
 ```
