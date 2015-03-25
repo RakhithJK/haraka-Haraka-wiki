@@ -5,4 +5,8 @@
 * Software selection:
     * OpenSSH server
 
-## 
+# Customize $EDITOR
+Get rid of that awful nano default editor:
+```sh
+sudo update-alternatives --config editor
+```
