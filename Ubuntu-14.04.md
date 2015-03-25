@@ -74,8 +74,11 @@ sed -i.bak -e 's/# tls/tls/' $HARAKA_CONF/plugins
 ```
 
 ### Enable connection info plugins
+Enable p0f, GeoIP, FCrDNS plugins.
 ```sh
 perl -pi -e 's/^access$/access\nconnect.p0f\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
+perl -pi -e 's/^mail_from.is_resolvable$/mail_from.is_resolvable\nspf/' $HARAKA_CONF/plugins
+perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\ndata.headers\ndata.uribl\nclamd\nspamassassin\nkarma' $HARAKA_CONF/plugins
 ```
 
 
