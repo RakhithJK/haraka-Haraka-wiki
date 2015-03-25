@@ -28,7 +28,8 @@ apt-get install -y clamav-daemon
 ```sh
 apt-get install -y spamassassin
 sed -i.bak -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
-sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin 
+sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin
+update-rc.d spamassassin enable
 ```
 
 [unbound-site]: https://unbound.net
