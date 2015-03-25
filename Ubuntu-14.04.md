@@ -49,32 +49,33 @@ ln -s /usr/bin/nodejs /usr/bin/node
 ```sh
 npm install -g Haraka
 haraka -i /etc/haraka
+export HARAKA_CONF=/etc/haraka/config
 ```
 
 ### Configure Haraka startup
 ```sh
-sed -i.bak -e 's/\/var\/haraka\/fwdmx/\/etc\/haraka/' /usr/local/lib/node_modules/Haraka/contrib/haraka.conf
-cp /usr/local/lib/node_modules/Haraka/contrib/haraka.conf /etc/init/
+export HARAKA_INSTALL=/usr/local/lib/node_modules/Haraka
+sed -i.bak -e 's/\/var\/haraka\/fwdmx/\/etc\/haraka/' $HARAKA_INSTALL/contrib/haraka.conf
+cp $HARAKA_INSTALL/contrib/haraka.conf /etc/init/
 initctl start haraka
 ```
 
 ### Log to syslog
 ```sh
-sed -i.bak -e 's/# log.syslog/log.syslog/' /etc/haraka/config/plugins
-sed -i.bak -e 's/always_ok=false/always_ok=true/' /etc/haraka/config/log.syslog.ini
+sed -i.bak -e 's/# log.syslog/log.syslog/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/always_ok=false/always_ok=true/' $HARAKA_CONF/log.syslog.ini
 ```
 
 ### Enable TLS/SSL
 ```sh
-cd /etc/haraka
 openssl req -x509 -nodes -days 2190 -newkey rsa:2048 \
-   -keyout config/tls_key.pem -out config/tls_cert.pem
-sed -i.bak -e 's/# tls/tls/' /etc/haraka/config/plugins
+   -keyout $HARAKA_CONF/tls_key.pem -out $HARAKA_CONF/tls_cert.pem
+sed -i.bak -e 's/# tls/tls/' $HARAKA_CONF/plugins
 ```
 
 ### Enable connection info plugins
 ```sh
-perl -pi -e 's/^access$/access\nconnect.p0f\nconnect.geoip\nconnect.fcrdns/' config/plugins
+perl -pi -e 's/^access$/access\nconnect.p0f\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
 ```
 
 
