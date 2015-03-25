@@ -1,5 +1,6 @@
-Welcome to the Haraka wiki!
+Haraka is an SMTP server built with [node.js](http://nodejs.org/).
 
+Haraka provides extensibility via a plugin architecture with built-in support for plugins that call SpamAssassin, DNS Blocklists, provide authentication, and many more.
 
 # Install Guides
 
