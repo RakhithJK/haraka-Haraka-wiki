@@ -1,4 +1,4 @@
-# Install [Ubuntu 14.04 LTS][ubuntu-dl]
+# Install [Ubuntu 14.04 LTS](http://www.ubuntu.com/download)
 Written and tested against Haraka 2.6.0.
 
 * download an [Ubuntu Server ISO][ubuntu-iso]
@@ -174,9 +174,6 @@ From another host, send test messages:
 swaks -server my.haraka.host -to valid@my-domain-name.tld -from my@valid.email
 ```
 
-
-
-[ubuntu-dl]: http://www.ubuntu.com/download
 [ubuntu-iso]: http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-server-amd64.iso
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
