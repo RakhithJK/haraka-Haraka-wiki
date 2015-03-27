@@ -3,6 +3,7 @@ Install Guides
 * [FreeBSD 10](http://www.tnpi.net/wiki/MT6_SMTP)
 
 How To
+* [[Upgrade Haraka]]
 * [[Google Safe Browsing]]
 * [Require TLS](Setting up TLS with CA certificates)
 * [Configure my Editor](Editor Settings)
