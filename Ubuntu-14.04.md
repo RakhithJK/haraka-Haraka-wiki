@@ -45,6 +45,7 @@ ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g Haraka
 haraka -i /etc/haraka
 export HARAKA_CONF=/etc/haraka/config
+<<<<<<< HEAD
 ```
 
 ### Enable cluster mode
@@ -70,6 +71,33 @@ initctl start haraka
 
 ### Enable TLS/SSL
 If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/haraka/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
+=======
+
+### Enable cluster mode
+```sh
+sed -i.bak -e 's/;nodes=cpus/nodes=cpus/' $HARAKA_CONF/smtp.ini
+```
+
+### Log to syslog
+This is not required, but if you don't switch to syslog, make sure to set up proper log rotation for haraka.log, **before** it consumes all your disk.
+```sh
+sed -i.bak -e 's/# log.syslog/log.syslog/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/always_ok=false/always_ok=true/' $HARAKA_CONF/log.syslog.ini
+```
+
+### Configure Haraka startup
+The upstart config expects Haraka to have the daemonize plugin enabled. If you choose not to enable daemonize, then be sure to edit haraka.conf and comment out the `export fork` line.
+```sh
+sed -i.bak -e 's/;daemonize=true/daemonize=true/' $HARAKA_CONF/smtp.ini
+export HARAKA_INSTALL=/usr/local/lib/node_modules/Haraka
+cp $HARAKA_INSTALL/contrib/haraka.conf /etc/init/
+sed -i.bak -e 's/\/var\/haraka\/fwdmx/\/etc\/haraka/' /etc/init/haraka.conf
+initctl start haraka
+```
+
+### Enable TLS/SSL
+If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/baudehlo/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
+>>>>>>> add smtp_forward and queue setup
 ```sh
 openssl req -x509 -nodes -days 2190 -newkey rsa:2048 \
    -keyout $HARAKA_CONF/tls_key.pem -out $HARAKA_CONF/tls_cert.pem
@@ -161,6 +189,35 @@ mv html ../
 Watch depends on the http-server being installed.
 ```sh
 TODO
+```
+
+
+# Configure RCPT
+Haraka needs to know who is accepts mail for. There are a variety of plugins (flat file, qmail-deliverabled, LDAP) that check recipient users and/or hosts against data sources to determine if Haraka should accept mail for them. The default plugin is [rcpt_to.in_host_list][plugin-host-list-doc] and matches on domain names.
+```sh
+echo 'my-domain-name.tld' > $HARAKA_CONF/host_list
+```
+Now Haraka will accept messages for anyone@my-domain-name.tld.
+
+## Set up queue
+Haraka does not include a mail store, which means you need to configure one. The default queue plugin is smtp_forward, which forwards the messages on to a mail store.
+```sh
+$EDITOR $HARAKA_CONF/smtp_forward.ini
+```
+
+# Test
+
+From another host, send test messages:
+
+```sh
+swaks -server my.haraka.host -to valid@my-domain-name.tld -from my@valid.email
+```
+
+
+### watch
+This plugin depends on having the http-server installed
+```sh
+...TODO...
 ```
 
 
