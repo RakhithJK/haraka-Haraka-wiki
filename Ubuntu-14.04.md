@@ -62,6 +62,8 @@ ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g Haraka
 haraka -i /etc/haraka
 export HARAKA_CONF=/etc/haraka/config
+sed -i.bak -e 's/;nodes=cpus/nodes=cpus/' $HARAKA_CONF/smtp.ini
+sed -i.bak -e 's/;daemonize=true/daemonize=true/' $HARAKA_CONF/smtp.ini
 ```
 
 ### Configure Haraka startup
