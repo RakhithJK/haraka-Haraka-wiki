@@ -6,6 +6,8 @@ For rolling new Haraka releases:
 1. Update [Changes](Changes)
 1. Update Public Suffix List
     * curl -o config/public-suffix-list https://publicsuffix.org/list/effective_tld_names.dat
+1. Update TLDs files (for URIBL plugin and utils.split_hostname)
+    * config/update_tld_files
 1. ...
 1. ...
 1. Bump version in package.json
