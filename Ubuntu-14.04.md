@@ -98,10 +98,16 @@ perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\nda
 
 ### p0f
 Ubuntu installs p0f 2 and the Haraka plugin only supports version 3. You'll have to manually install p0f v3 to use it.
+
 ```sh
-~~apt-get install -y p0f~~
-/usr/sbin/p0f &
-echo '@reboot /usr/sbin/p0f -i eth0 -Q /tmp/.p0f_socket -t -o /tmp/p0f.log -d "dst port 25 or dst port 587 or dst port 465"' >> /etc/crontab
+apt-get install -y p0f libpcap-dev
+mkdir ~/p0f && cd ~/p0f
+curl -O http://lcamtuf.coredump.cx/p0f3/releases/p0f-3.08b.tgz
+tar -xzf p0f-3.08b.tgz 
+cd p0f-3.08b/
+./build.sh
+cp p0f /usr/sbin/p0f 
+cp p0f.fp /etc/p0f/p0f.fp
 ```
 
 ### GeoIP
