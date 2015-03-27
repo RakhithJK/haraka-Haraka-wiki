@@ -9,7 +9,6 @@ For rolling new Haraka releases:
 1. Update TLDs files (for URIBL plugin and utils.split_hostname)
     * config/update_tld_files
 1. ...
-1. ...
 1. Bump version in package.json
 1. git tag v<release_number>; git push --tags
 1. npm publish
