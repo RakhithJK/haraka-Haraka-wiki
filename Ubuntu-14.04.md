@@ -16,36 +16,10 @@ Get rid of that awful nano default editor:
 sudo update-alternatives --config editor
 ```
 
-# Prereq services
-Note that any of these [optional] services can be installed and run in other [virtual] machines and accessed over the network. For large installs, where clustering is likely, isolating these services makes it easier to scale the system by applying additional resources exactly where they're needed.
-
 ## Install Unbound
 Mail servers need a fast, reliable and DNS server. [Unbound][unbound-site] is all of that and more.
 ```sh
 apt-get install -y unbound
-```
-
-## Install ClamAV
-[ClamAV][clamav-site] is a virus scanner. Haraka will use it via the [clamd][clamd-plugin] plugin.
-```sh
-apt-get install -y clamav-daemon
-dpkg-reconfigure clamav-base
-```
-### clamav non-default settings
-* Socket type: TCP
-* System logger: Yes
-```sh
-service clamav-daemon start
-```
-
-## Install SpamAssassin
-[SpamAssassin][spamd-site] is a spam scanning engine. It's written in perl, needs lots of resources, but is still very helpful. It is called via the [spamassassin][spamd-plugin] plugin.
-```sh
-apt-get install -y spamassassin
-sed -i.bak -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
-sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin
-update-rc.d spamassassin enable
-service spamassassin start
 ```
 
 # Install Haraka
@@ -87,14 +61,38 @@ openssl req -x509 -nodes -days 2190 -newkey rsa:2048 \
 sed -i.bak -e 's/# tls/tls/' $HARAKA_CONF/plugins
 ```
 
+## Install ClamAV
+[ClamAV][clamav-site] is a virus scanner. Haraka will use it via the [clamd][clamd-plugin] plugin.
+```sh
+apt-get install -y clamav-daemon
+dpkg-reconfigure clamav-base
+```
+### clamav non-default settings
+* Socket type: TCP
+* System logger: Yes
+```sh
+service clamav-daemon start
+perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\clamd' $HARAKA_CONF/plugins
+```
+
+## Install SpamAssassin
+[SpamAssassin][spamd-site] is a spam scanning engine. It's written in perl, needs lots of resources, but is still very helpful. It is called via the [spamassassin][spamd-plugin] plugin.
+```sh
+apt-get install -y spamassassin
+sed -i.bak -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
+sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin
+update-rc.d spamassassin enable
+service spamassassin start
+perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\nspamassassin' $HARAKA_CONF/plugins
+```
+
 ### Enable connection info plugins
-Enable FCrDNS, SPF, bounce, data.headers, URIBL, clamd, spamassassin, and karma plugins.
+Enable FCrDNS, SPF, bounce, data.headers, URIBL, and karma plugins.
 ```sh
 perl -pi -e 's/^access$/access\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
 perl -pi -e 's/^mail_from.is_resolvable$/mail_from.is_resolvable\nspf/' $HARAKA_CONF/plugins
-perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\ndata.headers\ndata.uribl\nclamd\nspamassassin\nkarma/' $HARAKA_CONF/plugins
+perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\ndata.headers\ndata.uribl\nclamd\nkarma/' $HARAKA_CONF/plugins
 ```
-
 
 ### p0f
 Ubuntu installs p0f 2 and the Haraka plugin only supports version 3. You'll have to manually install p0f v3 to use it.
