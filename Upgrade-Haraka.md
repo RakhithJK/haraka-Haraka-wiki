@@ -17,3 +17,9 @@ do
    cp $HARAKA_DIR/config/three-level-tlds
 done
 ```
+
+## Update your config
+Check for updates in your config files, and manually apply any changes that suite your preferences.
+```sh
+diff -r $HARAKA_DIR/config $HARAKA_CONF
+```
