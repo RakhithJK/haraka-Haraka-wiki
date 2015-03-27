@@ -5,6 +5,11 @@
 * Software selection:
     * OpenSSH server
 
+## Apply updates
+```sh
+apt-get update
+```
+
 ## Customize $EDITOR
 Get rid of that awful nano default editor:
 ```sh
