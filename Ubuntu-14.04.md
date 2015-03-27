@@ -38,6 +38,7 @@ ln -s /usr/bin/nodejs /usr/bin/node
 npm install -g Haraka
 haraka -i /etc/haraka
 export HARAKA_CONF=/etc/haraka/config
+```
 
 ### Enable cluster mode
 ```sh
@@ -147,9 +148,9 @@ mv html ../
 ```
 
 ### watch
-This plugin depends on having the http-server installed
+Watch depends on the http-server being installed.
 ```sh
-...TODO...
+TODO
 ```
 
 
