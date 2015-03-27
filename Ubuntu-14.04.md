@@ -90,16 +90,16 @@ sed -i.bak -e 's/# tls/tls/' $HARAKA_CONF/plugins
 ### Enable connection info plugins
 Enable p0f, GeoIP, FCrDNS, SPF, bounce, data.headers, URIBL, clamd, spamassassin, and karma plugins.
 ```sh
-perl -pi -e 's/^access$/access\nconnect.p0f\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
+perl -pi -e 's/^access$/access\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
 perl -pi -e 's/^mail_from.is_resolvable$/mail_from.is_resolvable\nspf/' $HARAKA_CONF/plugins
 perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\ndata.headers\ndata.uribl\nclamd\nspamassassin\nkarma/' $HARAKA_CONF/plugins
 ```
 
 
 ### p0f
-Enables remote host OS detection, and other connection params.
+Ubuntu installs p0f 2 and the Haraka plugin only supports version 3. You'll have to manually install p0f v3 to use it.
 ```sh
-apt-get install -y p0f
+~~apt-get install -y p0f~~
 /usr/sbin/p0f &
 echo '@reboot /usr/sbin/p0f -i eth0 -Q /tmp/.p0f_socket -t -o /tmp/p0f.log -d "dst port 25 or dst port 587 or dst port 465"' >> /etc/crontab
 ```
