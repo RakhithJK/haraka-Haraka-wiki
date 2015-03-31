@@ -1,1 +1,1 @@
-[Home](https://github.com/baudehlo/Haraka/wiki) | [[Install Guides]] | [[Upgrade Haraka]] | [[Testing]]
+[Home](https://github.com/baudehlo/Haraka/wiki) | [[Install Guides]] | [[Upgrade Haraka]] | [[Email Testing]]
