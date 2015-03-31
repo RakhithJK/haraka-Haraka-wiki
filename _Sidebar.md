@@ -9,6 +9,7 @@ How To
 * [Configure my Editor](Editor Settings)
 * [Contribute](Contributing)
 * [Roll a Release](Release Process)
+* [Test Email](Email Testing)
 
 
 Future Plans / TODO
