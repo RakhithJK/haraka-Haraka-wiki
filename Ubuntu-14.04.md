@@ -91,7 +91,7 @@ sed -i.bak -e 's/ENABLED=0/ENABLED=1/' /etc/default/spamassassin
 sed -i.bak -e 's/CRON=0/CRON=1/' /etc/default/spamassassin
 update-rc.d spamassassin enable
 service spamassassin start
-perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\nspamassassin' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#spamassassin/spamassassin/' $HARAKA_CONF/plugins
 ```
 
 ### Enable connection info plugins
