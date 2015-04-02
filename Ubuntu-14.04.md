@@ -80,7 +80,7 @@ dpkg-reconfigure clamav-base
 * System logger: Yes
 ```sh
 service clamav-daemon start
-perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\clamd' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#clamd/clamd/' $HARAKA_CONF/plugins
 ```
 
 ### Install SpamAssassin
