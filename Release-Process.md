@@ -8,7 +8,8 @@ For rolling new Haraka releases:
     * curl -o config/public-suffix-list https://publicsuffix.org/list/effective_tld_names.dat
 1. Update TLDs files (for URIBL plugin and utils.split_hostname)
     * config/update_tld_files
-1. For major version numbers, check for waiting PRs for that version.
+1. For major version numbers, check for waiting PRs for that milestone version.
+1. Grep the source for: `Sunset v3`, where 3 is the new major version.
 1. Bump version in package.json
 1. git tag v<release_number>; git push --tags
 1. npm publish
