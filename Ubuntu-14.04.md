@@ -57,8 +57,7 @@ The upstart config expects Haraka to have the daemonize plugin enabled. If you c
 ```sh
 sed -i.bak -e 's/;daemonize=true/daemonize=true/' $HARAKA_CONF/smtp.ini
 export HARAKA_INSTALL=/usr/local/lib/node_modules/Haraka
-cp $HARAKA_INSTALL/contrib/haraka.conf /etc/init/
-sed -i.bak -e 's/\/var\/haraka\/fwdmx/\/etc\/haraka/' /etc/init/haraka.conf
+cp $HARAKA_INSTALL/contrib/ubuntu-upstart/haraka.conf /etc/init/
 initctl start haraka
 ```
 
