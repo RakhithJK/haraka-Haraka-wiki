@@ -116,6 +116,8 @@ cd p0f-3.08b/
 ./build.sh
 cp p0f /usr/sbin/p0f 
 cp p0f.fp /etc/p0f/p0f.fp
+cp $HARAKA_INSTALL/contrib/ubuntu-upstart/p0f.conf /etc/init/
+initctl start p0f
 sed -i.bak -e 's/# connect.p0f/connect.p0f/' $HARAKA_CONF/plugins
 ```
 
