@@ -95,11 +95,13 @@ sed -i.bak -e 's/#spamassassin/spamassassin/' $HARAKA_CONF/plugins
 ```
 
 ### Enable connection info plugins
-Enable FCrDNS, SPF, bounce, data.headers, URIBL, and karma plugins.
+Enable FCrDNS, SPF, bounce, URIBL, and karma plugins.
 ```sh
-perl -pi -e 's/^access$/access\nconnect.geoip\nconnect.fcrdns/' $HARAKA_CONF/plugins
-perl -pi -e 's/^mail_from.is_resolvable$/mail_from.is_resolvable\nspf/' $HARAKA_CONF/plugins
-perl -pi -e 's/^rcpt_to.in_host_list$/rcpt_to.in_host_list\n\n# DATA\nbounce\ndata.headers\ndata.uribl\nclamd\nkarma/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/# connect.fcrdns/connect.fcrdns/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#spf/spf/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#bounce/bounce/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#karma/karma/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/#data.uribl/data.uribl/' $HARAKA_CONF/plugins
 ```
 
 ### p0f
@@ -114,7 +116,7 @@ cd p0f-3.08b/
 ./build.sh
 cp p0f /usr/sbin/p0f 
 cp p0f.fp /etc/p0f/p0f.fp
-perl -pi -e 's/^access$/access\nconnect.p0f/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/# connect.p0f/connect.p0f/' $HARAKA_CONF/plugins
 ```
 
 ### GeoIP
@@ -124,7 +126,7 @@ npm install -g maxmind-geolite-mirror
 mkdir -p /usr/local/share/GeoIP
 /usr/local/bin/maxmind-geolite-mirror
 ln -s /usr/local/bin/maxmind-geolite-mirror /etc/cron.weekly/
-perl -pi -e 's/^access$/access\nconnect.geoip/' $HARAKA_CONF/plugins
+sed -i.bak -e 's/# connect.geoip/connect.geoip/' $HARAKA_CONF/plugins
 ```
 
 ### http-server
