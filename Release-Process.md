@@ -12,6 +12,7 @@ For rolling new Haraka releases:
     * check for waiting PRs for that milestone version.
     * Grep the source for: `Sunset v3`, where 3 is the new major version.
 1. Bump version in package.json
+1. Check if any dependencies should be updated with `grunt versioncheck`
 1. git tag v<release_number>; git push --tags
 1. npm publish
 1. update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
