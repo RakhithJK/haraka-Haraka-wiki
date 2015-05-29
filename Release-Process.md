@@ -7,7 +7,7 @@ For rolling new Haraka releases:
 1. Update Public Suffix List
     * curl -o config/public-suffix-list https://publicsuffix.org/list/effective_tld_names.dat
 1. Update TLDs files (for URIBL plugin and utils.split_hostname)
-    * config/update_tld_files
+    * cd config && sh ./update_tld_files
 1. For major version releases:
     * check for waiting PRs for that milestone version.
     * Grep the source for: `Sunset v3`, where 3 is the new major version.
