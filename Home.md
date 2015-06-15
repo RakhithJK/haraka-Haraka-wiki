@@ -22,4 +22,5 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 
 # Additional Resources
+* [[Parsing Haraka Logs]]
 * [[Other Plugins]]
