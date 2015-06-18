@@ -37,6 +37,16 @@ Where a branch has more than one commit, it's usually best to squash them during
 
 To submit new_branch as a Pull Request, visit the [Haraka project page](https://github.com/baudehlo/Haraka) where your recently pushed branches will appear with a green "Pull Request" button.
 
+### Rebase
+
+On branches with more than a couple commits, it's usually best to squash the commits (condense them into one) before submitting the change(s) as a PR. To rebase:
+
+    git rebase -i baudehlo/master
+
+Change all but the first "pick" lines to "s" and save your changes. Your $EDITOR will then present you with all of the commit messages. Edit them and save. Then force push your branch:
+
+    git push -f
+
 ### General Guidelines
 
 * New features **must** be documented
