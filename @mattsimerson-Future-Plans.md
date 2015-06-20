@@ -18,3 +18,10 @@
     - [ ] rspamd
     - [ ] dspam
 - [ ] [content scanning server](https://github.com/baudehlo/Haraka/issues/1032)
+    - [ ] ESETS virus scanner
+- [ ] use backscatterer plugin
+- [ ] data.headers - improve UA sniffing (see omnifocus notes)
+- [ ] bounce - complete non_local_msgid
+- [ ] cfreader - complete
+- [ ] data.headers - check for Network Level Consistent path
+- [ ] SPF - check for "too wide"
