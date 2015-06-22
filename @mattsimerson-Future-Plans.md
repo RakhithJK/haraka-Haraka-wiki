@@ -5,7 +5,7 @@
     - [ ] return URL as block message
     - [ ] display `Why Blocked` page when URL visited
     - [ ] page shows logs for that UUID
-        - [ ] log.search (think: web enabled grep for haraka logs)
+        - [x] log.search (think: web enabled grep for haraka logs)
     - [ ] shows ordered list of karma rules that caused block
         - [x] karma rules need to be indexed
     - [ ] shows resolution steps
