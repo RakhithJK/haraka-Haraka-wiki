@@ -7,7 +7,7 @@
     - [ ] page shows logs for that UUID
         - [ ] log.search (think: web enabled grep for haraka logs)
     - [ ] shows ordered list of karma rules that caused block
-        - [ ] karma rules need to be indexed
+        - [x] karma rules need to be indexed
     - [ ] shows resolution steps
 - [ ] penalty plugin (resurrection of karma's penalty feature)
     - [ ] rate limit asn_all_bad (think: 1 conn/[hour/day/week])
