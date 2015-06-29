@@ -21,8 +21,11 @@
 - [ ] [content scanning server](https://github.com/baudehlo/Haraka/issues/1032)
     - [ ] ESETS virus scanner
 - [ ] use backscatterer plugin
-- [ ] data.headers - improve UA sniffing (see omnifocus notes)
+- [ ] data.headers
+    - [ ] improve UA sniffing (see omnifocus notes)
+    - [ ] check for Network Level Consistent path
+    - [ ] MLM detection [see](http://search.cpan.org/~mstevens/Mail-ListDetector-1.04/)
 - [ ] bounce - complete non_local_msgid
 - [ ] cfreader - complete
-- [ ] data.headers - check for Network Level Consistent path
+
 - [ ] SPF - check for "too wide"
