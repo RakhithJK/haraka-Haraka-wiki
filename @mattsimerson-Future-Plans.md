@@ -1,6 +1,6 @@
 
 
-- [ ] [log.elasticsearch plugin](https://github.com/baudehlo/Haraka/issues/906)
+- [/] [log.elasticsearch plugin](https://github.com/baudehlo/Haraka/issues/906)
 - [ ] why blocked?  [example](https://mail.theartfarm.com/haraka/)
     - [ ] return URL as block message
     - [x] display `Why Blocked` page when URL visited
