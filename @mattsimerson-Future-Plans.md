@@ -29,5 +29,4 @@
         * yahoo.com -> yahoogroups.com
 - [ ] bounce - complete non_local_msgid
 - [ ] cfreader - complete
-
-- [ ] SPF - check for "too wide"
+- [ ] SPF - check for "too wide" policy
