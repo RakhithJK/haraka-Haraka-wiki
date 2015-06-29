@@ -1,14 +1,14 @@
 
 
 - [/] [log.elasticsearch plugin](https://github.com/baudehlo/Haraka/issues/906)
-- [ ] why blocked?  [example](https://mail.theartfarm.com/haraka/)
+- [x] why blocked?  [example](https://mail.theartfarm.com/haraka/)
     - [x] return URL as block message
     - [x] display `Why Blocked` page when URL visited
     - [x] page shows logs for that UUID
         - [x] log.search (think: web enabled grep for haraka logs)
     - [x] shows ordered list of karma rules that caused block
         - [x] karma rules need to be indexed
-    - [ ] shows resolution steps
+    - [x] shows resolution steps
 - [ ] web ui for editing karma rules
 - [ ] penalty plugin (resurrection of karma's penalty feature)
     - [ ] rate limit asn_all_bad (think: 1 conn/[hour/day/week])
