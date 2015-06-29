@@ -2,7 +2,7 @@
 
 - [/] [log.elasticsearch plugin](https://github.com/baudehlo/Haraka/issues/906)
 - [ ] why blocked?  [example](https://mail.theartfarm.com/haraka/)
-    - [ ] return URL as block message
+    - [x] return URL as block message
     - [x] display `Why Blocked` page when URL visited
     - [x] page shows logs for that UUID
         - [x] log.search (think: web enabled grep for haraka logs)
