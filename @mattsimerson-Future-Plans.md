@@ -25,6 +25,8 @@
     - [ ] improve UA sniffing (see omnifocus notes)
     - [ ] check for Network Level Consistent path
     - [ ] MLM detection [see](http://search.cpan.org/~mstevens/Mail-ListDetector-1.04/)
+    - [ ] from_match: add well known exceptions
+        * yahoo.com -> yahoogroups.com
 - [ ] bounce - complete non_local_msgid
 - [ ] cfreader - complete
 
