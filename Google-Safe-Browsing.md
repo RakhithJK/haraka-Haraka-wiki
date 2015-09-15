@@ -1,6 +1,8 @@
 ### Use Google Safe Browsing with Haraka
 
-The way to use GSB with Haraka is via the clamd plugin. ClamAV optionally includes the GSB database. To avoid rejecting based on GSB hits, add an entry such as `/Heuristics\.Safebrowsing/` to haraka/config/clamd.excludes.
+The way to use GSB with Haraka is via the clamd plugin. ClamAV optionally includes the GSB database. To enable it you must set `SafeBrowsing yes` in `freshclam.conf` and manually run a `freshclam` to download the database.
+
+To avoid rejecting based on GSB hits, add an entry such as `/Heuristics\.Safebrowsing/` to haraka/config/clamd.excludes.
 
 ### karma usage
 
