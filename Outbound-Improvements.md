@@ -38,7 +38,7 @@ Rate/concurrency limits and different queue timers per target are hard because c
 
 Ideally - we want to distribute the outbound load amongst each cluster PID, but to control rate/concurrency, we would also want traffic to a specific destination to always be handled my the same PID.
 
-This had me thinking that we could take all of the IPs from an MX lookup for a domain and then generate a CRC32 which we could modulo against the number of workers  e.g. crc32(mx_ips) % modulo(cluster_workers), that way you would always end up with the same CRC32 for a given set of IP addresses and they would always be handled by the same cluster PID, so rate/concurrency becomes easier as you'd set it by the CRC32 value.   You can also maintain a retry queue for each CRC32 value, so flushing the queue also becomes much easier.
+This had me thinking that we could take all of the IPs from an MX lookup for a domain and then generate a CRC32 which we could modulo against the number of workers  e.g. `crc32(mx_ips) % modulo(cluster_workers)`, that way you would always end up with the same CRC32 for a given set of IP addresses and they would always be handled by the same cluster PID, so rate/concurrency becomes easier as you'd set it by the CRC32 value.   You can also maintain a retry queue for each CRC32 value, so flushing the queue also becomes much easier.
 
 Rough Example code to generate the CRC32:
 `````
