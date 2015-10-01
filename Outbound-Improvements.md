@@ -31,6 +31,10 @@ We currently just do a "multiply by two" approach to this. We should do somethin
 Support having multiple load balanced nodes (cluster), and preferably distribute the queue between the nodes.
 To support dynamic scaling of the number of nodes there should be some kind of manager on top that makes sure that all queue items are handled somewhere
 
+## Supporting the same outgoing IP stack (IPv4 and IPv6) for common sender and recipient
+
+Support with multiple IP stacks, to provide Google and other mail Provideren for the same recipients and senders in the same IP address for communicating. Because some mail providers have very strict guidelines here, especially with respect to the IPv6 addresses.
+For this I would recommend the modulo on a CRC32 hash always choose from a pool based on either IPv4 or IPv6, depending on which destination address is selected at random. See _smf_ his example.
 
 ### Current ideas (_smf_)
 
