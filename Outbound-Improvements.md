@@ -34,7 +34,21 @@ To support dynamic scaling of the number of nodes there should be some kind of m
 ## Supporting the same outgoing IP stack (IPv4 and IPv6) for common sender and recipient
 
 Support with multiple IP stacks, to provide Google and other mail Provideren for the same recipients and senders in the same IP address for communicating. Because some mail providers have very strict guidelines here, especially with respect to the IPv6 addresses.
-For this I would recommend the modulo on a CRC32 hash always choose from a pool based on either IPv4 or IPv6, depending on which destination address is selected at random. See _smf_ his example.
+For this I would recommend the modulo on a CRC32 hash always choose from a pool based on either IPv4 or IPv6, depending on which destination address is selected at random. See __smf__ his example.
+`crc32(array[IPv4 or v6 from MXs) + sender(from) + recipients) % modulo(outbound pool of IPv4 or v6)`
+
+Manual Config e.g.:
+```
+[outbound_ipv4]
+123.123.123.100
+123.123.123.101
+123.123.123.105
+
+[outbound_ipv4]
+fe80::d250:99ff:fe74:56aa
+fe80::d250:99ff:fe74:57aa
+fe80::d250:99ff:fe74:58aa
+```
 
 ### Current ideas (_smf_)
 
