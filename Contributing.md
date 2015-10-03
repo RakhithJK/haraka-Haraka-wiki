@@ -1,6 +1,11 @@
 We love and appreciate contributions to Haraka.
 
-### To contribute, use the Github "Pull Request" mechanism
+### To contribute money
+
+1. Create an issue
+2. Use [Bountysource](https://www.bountysource.com/teams/haraka/issues) to post a bounty on that issue
+
+### To contribute code, use the Github "Pull Request" mechanism
 
 #### Overview
 
