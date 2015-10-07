@@ -16,6 +16,8 @@ For rolling new Haraka releases:
 1. git tag v<release_number>; git push --tags
 1. npm publish
 1. update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
+1. Email the mailing list
+1. Publish a blog post
 
 ## Automation
 
