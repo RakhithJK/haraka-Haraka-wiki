@@ -22,5 +22,6 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] ditch vm.runInNewContext
 
 # Additional Resources
+* [[FAQ / Help / Troubleshooting]]
 * [[Parsing Haraka Logs]]
 * [[Other Plugins]]
