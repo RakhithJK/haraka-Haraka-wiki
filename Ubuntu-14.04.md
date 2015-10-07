@@ -62,7 +62,7 @@ initctl start haraka
 ```
 
 ### Enable TLS/SSL
-If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/baudehlo/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
+If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/haraka/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
 ```sh
 openssl req -x509 -nodes -days 2190 -newkey rsa:2048 \
    -keyout $HARAKA_CONF/tls_key.pem -out $HARAKA_CONF/tls_cert.pem
@@ -184,7 +184,7 @@ swaks -server my.haraka.host -to valid@my-domain-name.tld -from my@valid.email
 [ubuntu-iso]: http://releases.ubuntu.com/14.04.2/ubuntu-14.04.2-server-amd64.iso
 [unbound-site]: https://unbound.net
 [clamav-site]: http://www.clamav.net/
-[clamd-plugin]: https://github.com/baudehlo/Haraka/blob/master/plugins/clamd.js
+[clamd-plugin]: https://github.com/haraka/Haraka/blob/master/plugins/clamd.js
 [spamd-site]: https://spamassassin.apache.org
-[spamd-plugin]: https://github.com/baudehlo/Haraka/blob/master/plugins/spamassassin.js
-[plugin-host-list-doc]: https://github.com/baudehlo/Haraka/blob/master/docs/plugins/rcpt_to.in_host_list.md
+[spamd-plugin]: https://github.com/haraka/Haraka/blob/master/plugins/spamassassin.js
+[plugin-host-list-doc]: https://github.com/haraka/Haraka/blob/master/docs/plugins/rcpt_to.in_host_list.md

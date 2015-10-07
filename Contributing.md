@@ -9,7 +9,7 @@ We love and appreciate contributions to Haraka.
 
 #### Overview
 
-1. fork, by clicking the Fork button on the [GitHub Project Page](https://github.com/baudehlo/Haraka)
+1. fork, by clicking the Fork button on the [GitHub Project Page](https://github.com/haraka/Haraka)
 2. checkout a copy
 3. create a branch
 4. make changes
@@ -31,7 +31,7 @@ git push origin new_branch
 
 The `git commit` step(s) will launch you into `$EDITOR` where the first line should be a summary of the change(s) in less than 50 characters. Additional paragraphs can be added starting on line 3.
 
-To submit new_branch as a Pull Request, visit the [Haraka project page](https://github.com/baudehlo/Haraka) where your recently pushed branches will appear with a green "Pull Request" button.
+To submit new_branch as a Pull Request, visit the [Haraka project page](https://github.com/haraka/Haraka) where your recently pushed branches will appear with a green "Pull Request" button.
 
 ### Rebase
 

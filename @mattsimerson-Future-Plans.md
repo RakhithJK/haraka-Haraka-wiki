@@ -1,6 +1,6 @@
 
 
-- [x] [log.elasticsearch plugin](https://github.com/baudehlo/Haraka/issues/906)
+- [x] [log.elasticsearch plugin](https://github.com/haraka/Haraka/issues/906)
 - [x] why blocked?  [example](https://mail.theartfarm.com/haraka/)
     - [x] return URL as block message
     - [x] display `Why Blocked` page when URL visited
@@ -18,7 +18,7 @@
     - [ ] spamassassin
     - [ ] rspamd
     - [ ] dspam
-- [ ] [content scanning server](https://github.com/baudehlo/Haraka/issues/1032)
+- [ ] [content scanning server](https://github.com/haraka/Haraka/issues/1032)
     - [ ] ESETS virus scanner
 - [ ] use backscatterer plugin
 - [ ] data.headers

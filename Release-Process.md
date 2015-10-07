@@ -25,4 +25,4 @@ Most of these steps are currently manual. Documenting the process is the first s
 
 ### Automation Ideas
 * https://github.com/skywinder/github-changelog-generator
-* GitHub Releases [haraka](https://github.com/baudehlo/Haraka/releases)
+* GitHub Releases [haraka](https://github.com/haraka/Haraka/releases)
