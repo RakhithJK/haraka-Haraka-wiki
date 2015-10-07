@@ -20,4 +20,5 @@ Future Plans / TODO
 
 
 Additional Resources
+* [[FAQ / Help / Troubleshooting]]
 * [[Other Plugins]]
