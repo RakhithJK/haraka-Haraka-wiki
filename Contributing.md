@@ -43,11 +43,15 @@ On branches with more than a couple commits, it's usually best to squash the com
 
 To rebase:
 
-    git rebase -i haraka/master
+```sh
+git remote add haraka https://github.com/haraka/Haraka.git
+git remote update haraka
+git rebase -i haraka/master
+```
 
 Change all but the first "pick" lines to "s" and save your changes. Your $EDITOR will then present you with all of the commit messages. Edit them and save. Then force push your branch:
 
-    git push -f
+`git push -f`
 
 ### General Guidelines
 
