@@ -20,6 +20,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Decode Short URLs in data.uribl.js and test the destination URL instead
 - [x] [DKIM verifier](https://github.com/haraka/Haraka/blob/master/plugins/dkim_verify.js)
 - [ ] ditch vm.runInNewContext
+- [ ] Migrate to Stream2 streams internally #1323
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
