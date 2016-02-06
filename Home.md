@@ -22,7 +22,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] ditch vm.runInNewContext
 - [ ] Migrate to Stream3 streams internally #1323
 - [ ] Don't require TLS certificate pair when acting as an SMTP client. #1324
-- [ ] Support AUTH SCRAM #1213
+- [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
