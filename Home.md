@@ -24,6 +24,9 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Don't require TLS certificate pair when acting as an SMTP client. #1324
 - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
 
+# Ideas / Maybe Todo
+- Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/#1008)
+
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
 * [[Parsing Haraka Logs]]
