@@ -25,7 +25,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
 
 # Ideas / Maybe Todo
-- Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/#1008)
+- Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/1008)
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
