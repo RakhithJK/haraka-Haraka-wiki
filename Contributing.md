@@ -35,7 +35,7 @@ To submit new_branch as a Pull Request, visit the [Haraka project page](https://
 
 ### Rebase
 
-On branches with more than a couple commits, it's usually best to squash the commits (condense them into one) before submitting the change(s) as a PR. Notable exceptions the single commit guideline are:
+On branches with more than a couple commits, it's usually best to squash the commits (condense them into one) before submitting the change(s) as a PR. Notable exceptions to the single commit guideline are:
 
 * where there are multiple logical changes, put each in a commit (easier to review and revert)
 * whitespace changes belong in their own commit
