@@ -22,11 +22,8 @@
     " When saving a file, if there are errors, have Syntastic plugin mark them
     let g:syntastic_enable_signs=1
     let g:syntastic_auto_loc_list=1
-    let g:syntastic_javascript_checkers = ['jshint']
+    let g:syntastic_javascript_checkers = ['eslint']
 
-### [JSHint](http://www.jshint.com)
+### [eslint](http://eslint.org)
 
-There is a .jshintrc file in the root directory of the repo. Some code editors are smart enough to use it and highlight coding errors for you, which we encourage.
-
-JSHint is a better match for the style used by the principal authors than JSLint. JSlint styled code is quite acceptable, but expect resistance if you alter existing code solely to conform to JSLint conventions.
-
+There is an .eslintrc file in the root directory of the repo. Some code editors are smart enough to use it and highlight coding errors for you, which we encourage.
