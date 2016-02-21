@@ -2,20 +2,20 @@
 
 For rolling new Haraka releases:
 
-1. [ ] Start a N-week quiet period
-1. [ ] Update [Changes](Changes)
-1. [ ] Update [haraka-tld](https://github.com/haraka/haraka-tld)
-1. For major version releases:
+- [ ] Start a N-week quiet period
+- [ ] Update [Changes](Changes)
+- [ ] Update [haraka-tld](https://github.com/haraka/haraka-tld)
+- For major version releases:
     * [ ] check for waiting PRs for that milestone version.
     * [ ] Grep the source for: `Sunset v3`, where 3 is the new major version.
-1. [ ] Bump version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
-1. [ ] Check if any dependencies should be updated with `grunt versioncheck`
-1. [ ] Update release date in [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
-1. [ ] git tag v<release_number>; git push --tags
-1. [ ] npm publish
-1. [ ] update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
-1. [ ] Email the mailing list
-1. [ ] Publish a blog post
+- [ ] Bump version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
+- [ ] Check if any dependencies should be updated with `grunt versioncheck`
+- [ ] Update release date in [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
+- [ ] git tag v<release_number>; git push --tags
+- [ ] npm publish
+- [ ] update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
+- [ ] Email the mailing list
+- [ ] Publish a blog post
 
 ## Automation
 
