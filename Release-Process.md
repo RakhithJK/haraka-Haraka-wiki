@@ -12,8 +12,8 @@ For rolling new Haraka releases:
 - [ ] Bump version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
 - [ ] Check if any dependencies should be updated with `grunt versioncheck`
 - [ ] Update release date in [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
-- [ ] git tag v<release_number>; git push --tags
-- [ ] npm publish
+- [ ] `git tag v<release_number>; git push --tags`
+- [ ] `npm publish`
 - [ ] Post `Changes` file on the draft release and publish the release 
 - [ ] update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
 - [ ] Email the mailing list
