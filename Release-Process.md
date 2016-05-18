@@ -3,6 +3,7 @@
 For rolling new Haraka releases:
 
 - [ ] Start a N-week quiet period
+- [ ] Draft a release on the [releases page](https://github.com/haraka/Haraka/releases)
 - [ ] Update [Changes](Changes)
 - [ ] Update [haraka-tld](https://github.com/haraka/haraka-tld)
 - For major version releases:
