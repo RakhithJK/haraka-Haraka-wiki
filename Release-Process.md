@@ -19,7 +19,7 @@ For rolling new Haraka releases:
 
 ## Automation
 
-Most of these steps are currently manual. Documenting the process is the first step towards automating it.
+Most of these steps are currently manual. Documenting the process is the first step towards automating it. There are some [related comments here](https://github.com/haraka/Haraka/pull/1468#issuecomment-220100505).
 
 ### Automation Ideas
 * https://github.com/skywinder/github-changelog-generator
