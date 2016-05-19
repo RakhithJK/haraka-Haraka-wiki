@@ -14,7 +14,9 @@ The idea to implement this is a plugin that hooks `send_email`, `delivered` and 
 
 ## Implement connection pooling
 
-e.g. pool connections by [destination MX | IP address | domain name] 
+e.g. pool connections by [destination MX | IP address | domain name]
+
+*DONE* in #1466
 
 ## Tools
 
