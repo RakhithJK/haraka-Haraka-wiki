@@ -21,7 +21,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [x] [DKIM verifier](https://github.com/haraka/Haraka/blob/master/plugins/dkim_verify.js)
 - [ ] ditch vm.runInNewContext
 - [ ] Migrate to Stream3 streams internally #1323
-- [ ] Don't require TLS certificate pair when acting as an SMTP client. #1324
+- [X] Don't require TLS certificate pair when acting as an SMTP client. #1324
 - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
 
 # Ideas / Maybe Todo
