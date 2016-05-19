@@ -24,6 +24,7 @@ e.g. pool connections by [destination MX | IP address | domain name]
 
 * `haraka -c <path> --qlist`
 * `haraka -c <path> --qunstick <domain>`
+* TODO: `haraka -c <path> --qdelete <domain>`
 * Emptying the queue is done by `rm -f <path>/queue/*`
 
 ## Improve exponential back-off algorithm on 4xx failures.
