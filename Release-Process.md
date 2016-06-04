@@ -18,6 +18,7 @@ For rolling new Haraka releases:
 - [ ] update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
 - [ ] Email the mailing list
 - [ ] Publish a blog post
+- [ ] Edit the /topic on #haraka IRC channel
 
 ## Automation
 
