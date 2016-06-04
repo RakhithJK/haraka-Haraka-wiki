@@ -30,7 +30,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 # Feature Requests
 
-- [ ] cherry picked log levels #1488
+- [ ] cherry picked log levels [#1488](https://github.com/haraka/Haraka/issues/1488)
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
