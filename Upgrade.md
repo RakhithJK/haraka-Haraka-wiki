@@ -1,4 +1,8 @@
 
+# Changes
+
+The idea is to put **significant** upgrade issues here, to save folks from having to trawl through the contents of [Changes](https://github.com/haraka/Haraka/blob/master/Changes).  When you run into items that *should* be listed here, please add them!
+
 # 2016.02.13
 
 * updated for compat with eslint 2. Developers will likely need to:
