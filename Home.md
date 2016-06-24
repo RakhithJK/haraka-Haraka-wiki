@@ -13,6 +13,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 * [Configure my Editor](Editor Settings)
 * [Contribute](Contributing)
 * [Roll a Release](Release Process)
+* [Upgrade](Upgrade)
 
 # Future Plans / TODO
 * [ ] [[Outbound Improvements]]
