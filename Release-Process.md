@@ -4,11 +4,11 @@ For rolling new Haraka releases:
 
 - [ ] Start a N-week quiet period
 - [ ] Update [haraka-tld](https://github.com/haraka/haraka-tld)
+- [ ] Draft a release on the [releases page](https://github.com/haraka/Haraka/releases) (Save draft)
 - Create a PR with:
     - [ ] Updated [Changes](Changes)
     - [ ] Bumped version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
     - [ ] Updated dependencies identified with `grunt versioncheck`
-- [ ] Draft a release on the [releases page](https://github.com/haraka/Haraka/releases)
 - For major version releases:
     * [ ] check for waiting PRs for that milestone version.
     * [ ] Grep the source for: `Sunset v3`, where 3 is the new major version.
