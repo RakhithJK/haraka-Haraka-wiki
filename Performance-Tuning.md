@@ -4,7 +4,7 @@ This is a work in progress and if you have any other tips, please feel free to a
 
 Note that all of my testing has been on recent versions of Linux, so other operating systems might perform differently, so YMMV.
 
-## syctl
+## sysctl
 
 I added the following to `/etc/sysctl.conf` and applied these by running `sysctl -p`
 
