@@ -38,5 +38,6 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
+* [[Performance Tuning]]
 * [[Parsing Haraka Logs]]
 * [[Other Plugins]]
