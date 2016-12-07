@@ -21,5 +21,5 @@ net.ipv4.tcp_keepalive_time = 120
 I found additional performance by setting the following environment variables:
 
 * `UV_TCP_SINGLE_ACCEPT=1` - this makes libuv sleep after calling `accept()` which helps with a thundering herd of connections.
-* `UV_THREADPOOL_SIZE` - the default thread pool for libuv is 4 threads.  If you have a node modules which call `uv__work_submit()` to do synchronous tasks, then increasing this value may help.  The maximum this can be set to is 128.
+* `UV_THREADPOOL_SIZE` - the default thread pool for libuv is 4 threads.  If you have node modules which call `uv__work_submit()` to do synchronous tasks, then increasing this value may help.  The maximum this can be set to is 128.
 
