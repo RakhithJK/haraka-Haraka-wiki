@@ -1,5 +1,3 @@
-# Performance Tuning
-
 These are some pointers to improving Haraka performance when under heavy load (e.g. > 30 connection/sec or ~ 3 million connections per day).   
 
 This is a work in progress and if you have any other tips, please feel free to add them here.
