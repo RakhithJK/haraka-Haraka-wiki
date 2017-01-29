@@ -107,6 +107,6 @@ and add these two lines in the `scripts` section of package.json:
     "lintfix": "./node_modules/.bin/eslint --fix *.js test/**/*.js",
 ```
 
-Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`. With Travis-CI enabled, this happens automatically (see the .travis.yml above) on every PR. This means that anyone submitting PRs against your plugin will have their changes linted automatically. It reduces errors and bugs and saves everyone time.
+Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`. With Travis-CI enabled lint testing happens automatically (see the .travis.yml above) on every PR. This means that anyone submitting PRs against your plugin will have their changes linted automatically. It reduces errors and bugs and saves everyone time.
 
 I also add `"eslint:recommended"` to the extends section and find it helpful. You may consider it too.
