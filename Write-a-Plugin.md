@@ -112,3 +112,20 @@ and add these two lines in the `scripts` section of package.json:
 Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`. With Travis-CI enabled lint testing happens automatically (see the .travis.yml above) on every PR. This means that anyone submitting PRs against your plugin will have their changes linted automatically. It reduces errors and bugs and saves everyone time.
 
 I also add `"eslint:recommended"` to the extends section and find it helpful. You may consider it too.
+
+### codeclimate
+
+If you want a codeclimate badge in your repo, you'll need to specify eslint version 3 (they default to 2) in a .codeclimate.yml file:
+
+```yaml
+engines: 
+  eslint:
+    enabled: true
+    channel: "eslint-3"
+    config:
+      config: ".eslintrc.json"
+
+ratings:
+   paths:
+   - "**.js"
+```
