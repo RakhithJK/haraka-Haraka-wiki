@@ -1,6 +1,6 @@
 # Nomenclature
 
-Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaking most plugins and the `haraka-plugin` prefix is the nomenclature we're using.
+Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaging most plugins and the `haraka-plugin` prefix is the nomenclature we're using.
 
 ## package plugin for release on npm.
 
