@@ -1,0 +1,109 @@
+# Nomenclature
+
+Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaking most plugins and the `haraka-plugin` prefix is the nomenclature we're using.
+
+## package plugin for release on npm.
+
+````
+mkdir haraka-plugin-example && cd haraka-plugin-example
+touch index.js       // plugin code goes here
+mkdir config test
+echo '[main]' > config/example.ini
+echo "var fixtures = require('haraka-test-fixtures');" > test/main.js
+npm init
+npm install --save <npm modules your plugin requires>
+npm install --save-dev haraka-test-fixtures eslint eslint-plugin-haraka
+````
+
+## config loading
+
+Use this standard method for config loading:
+
+```js
+exports.register = function () {
+    plugin.load_example_ini();
+}
+exports.load_example_ini = function () {
+    var plugin = this;
+    plugin.cfg = plugin.config.get('example.ini', function () {
+        plugin.load_example_ini();
+    }
+}
+```
+
+- the callback added to `config.get()` lets your plugins config get updated immediately when the config changes. No Haraka restart required.
+- storing the config contents at plugin.cfg lets the active configuration be accessed and manipulated by external processes. This is used heavily when adding test coverage.
+
+### booleans
+
+If you have true/false booleans in your config, declare them and optionally, their defaults as well:
+
+exports.load_example_ini = function () {
+    var plugin = this;
+    plugin.cfg = plugin.config.get('example.ini', {
+        booleans: [
+            '+enabled',               // plugins.cfg.main.enabled=true
+            '-disabled',              // plugins.cfg.main.disabled=false
+            '+feature_section.yes'    // plugins.cfg.feature_section.yes=true
+        ]
+    },
+    function () {
+        plugin.load_example_ini();
+    }
+}
+
+## enable Travis-CI testing
+
+Add a .travis.yml config file to your repo:
+
+```yaml
+language: node_js
+node_js:
+  - "4"
+  - "6"
+
+services:
+# https://docs.travis-ci.com/user/database-setup/
+#  - mongodb
+#  - elasticsearch
+#  - redis-server
+
+before_script:
+
+script:
+    - npm run lint
+    - npm test
+
+after_success:
+
+sudo: false
+```
+
+The services section can start up DB instances to test against. Use your favorite testing framework to write some basic tests, like config loading, connecting to DBs and then validating that your functions do what you expect.
+
+## Lint testing with eslint
+
+We ask that you [at least mostly] use the coding style in haraka/recommended. We've made it easy by publishing an eslint plugin that imports them automatically. Add an `.eslintrc.json` file to your project dir:
+
+```json
+{
+  "plugins": [
+    "haraka"
+  ],
+  "extends": ["plugin:haraka/recommended"],
+  "rules": {
+    "no-console": 0
+  }
+}
+```
+
+and add these two lines in the `scripts` section of package.json:
+
+```js
+    "lint": "./node_modules/.bin/eslint *.js test/**/*.js",
+    "lintfix": "./node_modules/.bin/eslint --fix *.js test/**/*.js",
+```
+
+Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`. With Travis-CI enabled, this happens automatically (see the .travis.yml above) on every PR. This means that anyone submitting PRs against your plugin will have their changes linted automatically. It reduces errors and bugs and saves everyone time.
+
+I also add `"eslint:recommended"` to the extends section and find it helpful. You may consider it too.
