@@ -39,6 +39,7 @@ exports.load_example_ini = function () {
 
 If you have true/false booleans in your config, declare them and optionally, their defaults as well:
 
+```js
 exports.load_example_ini = function () {
     var plugin = this;
     plugin.cfg = plugin.config.get('example.ini', {
@@ -52,6 +53,7 @@ exports.load_example_ini = function () {
         plugin.load_example_ini();
     }
 }
+```
 
 ## enable Travis-CI testing
 
