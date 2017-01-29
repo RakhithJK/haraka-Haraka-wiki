@@ -115,7 +115,7 @@ I also add `"eslint:recommended"` to the extends section and find it helpful. Yo
 
 ### codeclimate
 
-If you want a codeclimate badge in your repo, you'll need to specify eslint version 3 (they default to 2) in a .codeclimate.yml file:
+If you want a codeclimate badge to display in your README, you'll need to specify eslint version 3 (they default to 2) in a .codeclimate.yml file. Otherwise the codeclimate import will fail:
 
 ```yaml
 engines: 
