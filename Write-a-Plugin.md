@@ -86,7 +86,7 @@ The services section can start up DB instances to test against. Use your favorit
 
 ## Lint testing with eslint
 
-We ask that you [at least mostly] use the coding style in haraka/recommended. We've made it easy by publishing an eslint plugin that imports them automatically. Add an `.eslintrc.json` file to your project dir:
+We ask that you [at least mostly] use the coding style in haraka/recommended. We've made it easy by publishing an eslint plugin that imports our rules automatically. Add an `.eslintrc.json` file to your project dir:
 
 ```json
 {
