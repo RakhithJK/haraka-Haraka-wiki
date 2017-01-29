@@ -132,7 +132,7 @@ ratings:
 
 ## Windows Compatibility
 
-We do our Windows testing on [Appveyor]. It must be configured in an appveyor.yml file like this:
+We do our Windows testing on [Appveyor](https://www.appveyor.com). It must be configured in an appveyor.yml file like this:
 
 ```yaml
 environment:
