@@ -10,6 +10,8 @@ touch index.js       // plugin code goes here
 mkdir config test
 echo '[main]' > config/example.ini
 echo "var fixtures = require('haraka-test-fixtures');" > test/main.js
+echo '# haraka-plugin-example' > README.md
+echo "# 1.0.0 - $(date +%Y-%m-%d)" > Changes.md
 npm init
 npm install --save <npm modules your plugin requires>
 npm install --save-dev haraka-test-fixtures eslint eslint-plugin-haraka
