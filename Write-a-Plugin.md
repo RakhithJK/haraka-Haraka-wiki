@@ -21,6 +21,7 @@ Use this standard method for config loading:
 
 ```js
 exports.register = function () {
+    var plugin = this;
     plugin.load_example_ini();
 }
 exports.load_example_ini = function () {
