@@ -129,3 +129,28 @@ ratings:
    paths:
    - "**.js"
 ```
+
+## Windows Compatibility
+
+We do our Windows testing on [Appveyor]. It must be configured in an appveyor.yml file like this:
+
+```yaml
+environment:
+  nodejs_version: "4"
+
+install:
+  - npm install
+
+before_build:
+build: off
+after_build:
+
+before_test:
+  - node --version
+  - npm --version
+
+test_script:
+  - node run_tests
+
+after_test:
+```
