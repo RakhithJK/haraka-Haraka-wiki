@@ -10,6 +10,7 @@ How To
 * [Contribute](Contributing)
 * [Roll a Release](Release Process)
 * [Test Email](Email Testing)
+* [Write a Plugin](Write-a-Plugin)
 
 
 Future Plans / TODO
