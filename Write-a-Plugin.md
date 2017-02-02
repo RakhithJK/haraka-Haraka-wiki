@@ -30,7 +30,7 @@ exports.load_example_ini = function () {
     var plugin = this;
     plugin.cfg = plugin.config.get('example.ini', function () {
         plugin.load_example_ini();
-    }
+    });
 }
 ```
 
@@ -53,7 +53,7 @@ exports.load_example_ini = function () {
     },
     function () {
         plugin.load_example_ini();
-    }
+    });
 }
 ```
 
