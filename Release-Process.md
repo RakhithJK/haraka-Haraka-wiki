@@ -8,7 +8,6 @@ For rolling new Haraka releases:
 - Create a PR with:
     - [ ] Updated [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
     - [ ] Bumped version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
-    - [ ] Updated dependencies identified with `grunt versioncheck`
 - For major version releases:
     * [ ] check for waiting PRs for that milestone version.
     * [ ] Grep the source for: `Sunset v3`, where 3 is the new major version.
