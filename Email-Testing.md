@@ -5,5 +5,5 @@
 # Email Authentication checkers
 
 Send an email to these services and they'll reply with an email authentication report.
-* [port25.com](mailto://check-auth@verifier.port25.com)
-* [dkim.org](mailto://dkim-test@testing.dkim.org)
+* [port25.com](mailto:check-auth@verifier.port25.com)
+* [dkim.org](mailto:dkim-test@testing.dkim.org)
