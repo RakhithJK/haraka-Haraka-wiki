@@ -54,7 +54,7 @@ Manual Config e.g.:
 123.123.123.101
 123.123.123.105
 
-[outbound_ipv4]
+[outbound_ipv6]
 fe80::d250:99ff:fe74:56aa
 fe80::d250:99ff:fe74:57aa
 fe80::d250:99ff:fe74:58aa
