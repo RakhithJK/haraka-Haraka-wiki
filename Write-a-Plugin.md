@@ -4,6 +4,10 @@ Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packagin
 
 ## package plugin for release on npm.
 
+Clone the [haraka-plugin-template](https://github.com/haraka/haraka-plugin-template).
+
+Or set up the plugin directory yourself:
+
 ````
 mkdir haraka-plugin-example && cd haraka-plugin-example
 touch index.js       // plugin code goes here
