@@ -5,11 +5,11 @@ Install Guides
 How To
 * [[Upgrade Haraka]]
 * [[Google Safe Browsing]]
-* [Require TLS](Setting up TLS with CA certificates)
-* [Configure my Editor](Editor Settings)
+* [Require TLS](Setting-up-TLS-with-CA-certificates)
+* [Configure my Editor](Editor-Settings)
 * [Contribute](Contributing)
-* [Roll a Release](Release Process)
-* [Test Email](Email Testing)
+* [Roll a Release](Release-Process)
+* [Test Email](Email-Testing)
 * [Write a Plugin](Write-a-Plugin)
 
 
