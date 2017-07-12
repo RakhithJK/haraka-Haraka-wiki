@@ -30,7 +30,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/1008)
 - [ ] Save the SMTP conversation [#945](https://github.com/haraka/Haraka/issues/945)
 - [ ] Domain Reputation Database [#696](https://github.com/haraka/Haraka/issues/696)
-- [ ] Outbound queue with rabbit [#1311)(https://github.com/haraka/Haraka/issues/1311)
+- [ ] Outbound queue with rabbit [#1311](https://github.com/haraka/Haraka/issues/1311)
 
 # Feature Requests
 
