@@ -12,7 +12,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 * [Require TLS](Setting-up-TLS-with-CA-certificates)
 * [Configure my Editor](https://github.com/haraka/Haraka/wiki/Editor-Settings)
 * [Contribute](Contributing)
-* [Roll a Release](Release_Process)
+* [Roll a Release](Release-Process)
 * [Upgrade](Upgrade)
 * [Write a Plugin](Write-a-Plugin)
 
