@@ -18,7 +18,7 @@
     - [ ] spamassassin
     - [ ] rspamd
     - [ ] dspam
-- [ ] [content scanning server](https://github.com/haraka/Haraka/issues/1032)
+- [ ] [content scanning server](https://github.com/cloud-ecs/ecsd)
     - [ ] ESETS virus scanner
 - [ ] use backscatterer plugin
 - [ ] data.headers
