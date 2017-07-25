@@ -10,9 +10,9 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 # How To
 * [[Google Safe Browsing]]
 * [Require TLS](Setting up TLS with CA certificates)
-* [Configure my Editor](Editor Settings)
+* [Configure my Editor](https://github.com/haraka/Haraka/wiki/Editor-Settings)
 * [Contribute](Contributing)
-* [Roll a Release](Release Process)
+* [Roll a Release](Release_Process)
 * [Upgrade](Upgrade)
 * [Write a Plugin](Write-a-Plugin)
 
