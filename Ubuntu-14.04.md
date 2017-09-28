@@ -24,6 +24,13 @@ Mail servers need a fast and reliable DNS server. [Unbound][unbound-site] is all
 apt-get install -y unbound
 ```
 
+## Install Node v6
+
+```
+curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
 # Install Haraka
 
 ## Haraka prereqs
