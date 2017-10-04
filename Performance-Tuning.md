@@ -30,3 +30,5 @@ When running with `nodes=cpus`, setting the environment variable `NODE_CLUSTER_S
 ## Haraka
 
 The `toobusy` plugin is highly recommended to prevent Haraka from becoming overwhelmed when under heavy load.
+
+If you have any plugins that use Redis and store the Redis connection handle in `server.notes.redis`, then if you run `echo "MONITOR" | redis-cli`, you may find a lot of unexpected PUBLISH commands from Haraka.   This comes from `haraka-results`.  On high volume systems you will want to disable this behaviour by setting `redis_publish=false` in `config/results.ini`.
