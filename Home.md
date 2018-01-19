@@ -25,7 +25,8 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Migrate to Stream3 streams internally #1323
 - [X] Don't require TLS certificate pair when acting as an SMTP client. #1324
 - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
-- [ ] support for MTA-STS (Strict Transport Security)[#2070](https://github.com/haraka/Haraka/issues/2070)
+- [ ] support for MTA-STS (Strict Transport Security) [#2070](https://github.com/haraka/Haraka/issues/2070)
+- [ ] support for ARC [2283](https://github.com/haraka/Haraka/issues/2283)
 
 # Ideas / Maybe Todo
 - [ ] Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/1008)
