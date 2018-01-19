@@ -27,6 +27,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
 - [ ] support for MTA-STS (Strict Transport Security) [#2070](https://github.com/haraka/Haraka/issues/2070)
 - [ ] support for ARC [#2283](https://github.com/haraka/Haraka/issues/2283)
+- [ ] add TLS DANE support [#779](https://github.com/haraka/Haraka/issues/779)
 
 # Ideas / Maybe Todo
 - [ ] Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/1008)
