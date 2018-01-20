@@ -18,7 +18,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 # Future Plans / TODO
 * [ ] [[Outbound Improvements]]
-- [x] Support [RFC3464](http://tools.ietf.org/html/rfc3464) in bounce messages (#1189)
+- [x] Support [RFC3464](http://tools.ietf.org/html/rfc3464) in bounce messages [#1189](https://github.com/haraka/Haraka/issues/1189)
 - [ ] Decode Short URLs in data.uribl.js and test the destination URL instead
 - [x] [DKIM verifier](https://github.com/haraka/Haraka/blob/master/plugins/dkim_verify.js)
 - [ ] ditch vm.runInNewContext
