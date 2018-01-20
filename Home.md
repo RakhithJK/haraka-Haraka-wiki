@@ -34,6 +34,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Save the SMTP conversation [#945](https://github.com/haraka/Haraka/issues/945)
 - [ ] Domain Reputation Database [#696](https://github.com/haraka/Haraka/issues/696)
 - [ ] Outbound queue with rabbit [#1311](https://github.com/haraka/Haraka/issues/1311)
+- [ ] CLI mode for plugins [#1220](https://github.com/haraka/Haraka/issues/1220)
 
 # Feature Requests
 
