@@ -10,9 +10,7 @@ Currently on a restart, with cluster enabled, the parent process reads the queue
 
 Implement outbound rate limiting a-la plugins/rate_limit plugin.
 
-The idea to implement this is a plugin that hooks `send_email`, `delivered` and `deferred`, along with a redis based counter. Simply increment hmail.todo.domain in `send_email` and decrement in the other hooks, and in `send_email` if the limit for a given domain is reached, return `constants.delay`.
-
-**DONE** See https://github.com/haraka/haraka-plugin-outbound-rate-limit
+**DONE** See https://github.com/haraka/haraka-plugin-limit
 
 ## Implement connection pooling
 
