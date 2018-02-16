@@ -27,6 +27,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
     - [X] Don't require TLS certificate pair when acting as an SMTP client. #1324
     - [ ] add TLS DANE support [#779](https://github.com/haraka/Haraka/issues/779)
     - [ ] support for MTA-STS (Strict Transport Security) [#2070](https://github.com/haraka/Haraka/issues/2070)
+    - [ ] remove plugins/tls, consolidate to tls_socket [#2062](https://github.com/haraka/Haraka/issues/2062)
 - AUTH
     - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
     - [ ] Support for multiple AUTH plugins [#1462](https://github.com/haraka/Haraka/issues/1462)
