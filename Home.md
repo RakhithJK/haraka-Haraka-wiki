@@ -38,6 +38,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 - [ ] Domain Reputation Database [#696](https://github.com/haraka/Haraka/issues/696)
 - [ ] Outbound queue with rabbit [#1311](https://github.com/haraka/Haraka/issues/1311)
 - [ ] CLI mode for plugins [#1220](https://github.com/haraka/Haraka/issues/1220)
+- [ ] permit plugins to fork workers [#2099](https://github.com/haraka/Haraka/issues/2099)
 
 # Feature Requests
 
