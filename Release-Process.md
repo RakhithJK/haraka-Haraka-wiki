@@ -6,7 +6,7 @@ For rolling new Haraka releases:
 - [ ] Update [haraka-tld](https://github.com/haraka/haraka-tld)
 - [ ] Draft a release on the [releases page](https://github.com/haraka/Haraka/releases) (Save draft)
 - Create a PR with:
-    - [ ] Updated [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
+    - [ ] Updated [Changes](https://github.com/haraka/Haraka/blob/master/Changes.md)
     - [ ] Bumped version in [package.json](https://github.com/haraka/Haraka/blob/master/package.json)
 - For major version releases:
     * [ ] check for waiting PRs for that milestone version.
