@@ -11,7 +11,7 @@ For rolling new Haraka releases:
 - For major version releases:
     * [ ] check for waiting PRs for that milestone version.
     * [ ] Grep the source for: `Sunset v3`, where 3 is the new major version.
-- [ ] Update release date in [Changes](https://github.com/haraka/Haraka/blob/master/Changes)
+- [ ] Update release date in [Changes](https://github.com/haraka/Haraka/blob/master/Changes.md)
 - [ ] `npm publish`
 - [ ] Post `Changes` file on the draft release and publish the release 
 - [ ] update [haraka's wikipedia page](https://en.wikipedia.org/wiki/Haraka_(software))
