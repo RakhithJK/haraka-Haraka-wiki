@@ -32,6 +32,8 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
     - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
     - [ ] Support for multiple AUTH plugins [#1462](https://github.com/haraka/Haraka/issues/1462)
 - [ ] support for ARC [#2283](https://github.com/haraka/Haraka/issues/2283)
+- [ ] native DMARC plugin
+- [ ] Remove HTTP server to haraka-httpd [#2394](https://github.com/haraka/Haraka/issues/2394)
 
 # Ideas / Maybe Todo
 - [ ] Use whois data to correlate ASNs to orgs [#1008](https://github.com/haraka/Haraka/issues/1008)
