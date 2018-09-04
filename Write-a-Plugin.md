@@ -1,3 +1,7 @@
+# Don't reinvent the wheel
+
+Before writing a new plugin, first check the [Plugin Registry](https://github.com/haraka/Haraka/blob/master/Plugins.md) to see if that plugin exists.
+
 # Nomenclature
 
 Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaging most plugins and the `haraka-plugin` prefix is the nomenclature we're using.
