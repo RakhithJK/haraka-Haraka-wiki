@@ -47,7 +47,7 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
 
 - [x] custom HELO/EHLO messages [#1532](https://github.com/haraka/Haraka/issues/1532)
 - [ ] cherry picked log levels [#1488](https://github.com/haraka/Haraka/issues/1488)
-- [ ] reduced logging and more consistency [#2434](/haraka/Haraka/issues/2434)
+- [ ] reduced logging and more logging consistency [#2434](/haraka/Haraka/issues/2434)
 
 # Additional Resources
 * [[FAQ / Help / Troubleshooting]]
