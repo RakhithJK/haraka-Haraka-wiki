@@ -57,3 +57,7 @@ fe80::d250:99ff:fe74:56aa
 fe80::d250:99ff:fe74:57aa
 fe80::d250:99ff:fe74:58aa
 ```
+
+## Performance improvements
+
+- [lots of recipients cause major problems](/haraka/Haraka/issues/2325)
