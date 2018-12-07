@@ -31,6 +31,8 @@ e.g. pool connections by [destination MX | IP address | domain name]
 
 We currently just do a "multiply by two" approach to this. We should do something a bit smarter.
 
+See [#2084](https://github.com/haraka/Haraka/issues/2084)
+
 ## Supporting and delegating to multiple nodes
 
 Support having multiple load balanced nodes (cluster), and preferably distribute the queue between the nodes.
