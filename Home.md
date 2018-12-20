@@ -28,10 +28,10 @@ Haraka provides extensibility via a plugin architecture with built-in support fo
     - [ ] add TLS DANE support [#779](https://github.com/haraka/Haraka/issues/779)
     - [ ] support for MTA-STS (Strict Transport Security) [#2070](https://github.com/haraka/Haraka/issues/2070)
     - [ ] remove plugins/tls, consolidate to tls_socket [#2062](https://github.com/haraka/Haraka/issues/2062)
-    - [ ] permit TLS cert paths to be fully qualified [#2521](https://github.com/haraka/Haraka/issues/2521)
+    - [x] permit TLS cert paths to be fully qualified [#2521](https://github.com/haraka/Haraka/issues/2521)  [#46](/haraka/haraka-config/issues/46)
 - AUTH
-    - [ ] Support AUTH SCRAM [#1214](https://github.com/haraka/Haraka/issues/1214)
-    - [ ] Support for multiple AUTH plugins [#1462](https://github.com/haraka/Haraka/issues/1462)
+    - [ ] Support AUTH SCRAM [#1214](/haraka/Haraka/issues/1214)
+    - [ ] Support for multiple AUTH plugins [#1462](/haraka/Haraka/issues/1462)
 - [ ] support for ARC [#2283](https://github.com/haraka/Haraka/issues/2283)
 - [ ] native DMARC plugin
 - [ ] Remove HTTP server to haraka-httpd [#2394](https://github.com/haraka/Haraka/issues/2394)
