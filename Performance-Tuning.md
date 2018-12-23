@@ -25,10 +25,16 @@ I found additional performance by setting the following environment variables:
 
 ## node
 
+### nodes
+
+With `nodes=0` set in smtp.ini Haraka runs in a single process. If an error is encountered in Haraka or even a plugin, it can crash the entire mail server. Unless you're testing or bug hunting, this is not desirable. When `nodes=1` or higher is set, a supervisory "master" process is started. The master process takes care of making sure that there are *nodes* worker processes. If a worker crashes, the supervisor starts up a new one.
+
+Production Haraka servers should certainly have nodes set to some value higher than zero. If the server is running only Haraka, setting `nodes=cpus` will spawn a worker for each CPU core. This will likely be very near the optimal number of workers your hardware can handle. However, beware that [cpu options impact memory use](/haraka/Haraka/issues/1442).
+
 When running with `nodes=cpus`, setting the environment variable `NODE_CLUSTER_SCHED_POLICY=none` was found to significantly improve the amount of time before the SMTP banner was sent to a newly connected socket.   Without this it would sometimes take over 30 seconds before the SMTP banner was sent, which caused many clients to disconnect before this happened.
 
 ## Haraka
 
-The `toobusy` plugin is highly recommended to prevent Haraka from becoming overwhelmed when under heavy load.
+The `toobusy` plugin is recommended to prevent Haraka from becoming overwhelmed when under heavy load.
 
 If you have any plugins that use Redis and store the Redis connection handle in `server.notes.redis`, then if you run `echo "MONITOR" | redis-cli`, you may find a lot of unexpected PUBLISH commands from Haraka.   This comes from `haraka-results`.  On high volume systems you will want to disable this behaviour by setting `redis_publish=false` in `config/results.ini`.
