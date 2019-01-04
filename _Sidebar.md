@@ -1,6 +1,6 @@
 Install Guides
 * [[Ubuntu 14.04]]
-* [FreeBSD 10](https://www.tnpi.net/wiki/MT6_SMTP)
+* [FreeBSD 12](https://github.com/msimerson/Mail-Toaster-6/wiki/FreeBSD)
 
 How To
 * [[Upgrade Haraka]]
