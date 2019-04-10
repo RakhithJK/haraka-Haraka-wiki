@@ -1,2 +1,3 @@
 * [[Ubuntu 14.04]]
-* [FreeBSD 10](http://www.tnpi.net/wiki/MT6_SMTP)
+* [FreeBSD](https://github.com/msimerson/Mail-Toaster-6/wiki)
+* [[Windows]]
