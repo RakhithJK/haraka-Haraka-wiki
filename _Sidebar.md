@@ -1,6 +1,7 @@
 Install Guides
 * [[Ubuntu 14.04]]
 * [FreeBSD 12](https://github.com/msimerson/Mail-Toaster-6/wiki/FreeBSD)
+* [[Windows]]
 
 How To
 * [[Upgrade Haraka]]
