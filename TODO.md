@@ -35,3 +35,4 @@
 - [ ] cherry picked log levels [#1488](https://github.com/haraka/Haraka/issues/1488)
 - [ ] reduced logging and more logging consistency [#2434](/haraka/Haraka/issues/2434)
 - [ ] DKIM: sign any message with a "default" key [#1548](https://github.com/haraka/Haraka/issues/1548)
+- [ ] DNSBL: add configurable timeouts [#2436](https://github.com/haraka/Haraka/issues/2436)
