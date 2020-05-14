@@ -96,7 +96,7 @@ initctl start haraka
 ```
 
 ### Enable TLS/SSL
-If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/baudehlo/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
+If you have a $igned TLS certificate, install it here instead. See also [this note on CA certificates](https://github.com/haraka/Haraka/wiki/Setting%20up%20TLS%20with%20CA%20certificates).
 >>>>>>> add smtp_forward and queue setup
 ```sh
 openssl req -x509 -nodes -days 2190 -newkey rsa:2048 \
