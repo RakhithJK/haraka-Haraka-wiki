@@ -65,59 +65,46 @@ exports.load_example_ini = function () {
 }
 ```
 
-## enable Travis-CI testing
-
-Add a .travis.yml config file to your repo:
-
-```yaml
-language: node_js
-node_js:
-  - "4"
-  - "6"
-
-services:
-# https://docs.travis-ci.com/user/database-setup/
-#  - mongodb
-#  - elasticsearch
-#  - redis-server
-
-before_script:
-
-script:
-    - npm run lint
-    - npm test
-
-after_success:
-
-sudo: false
-```
-
-The services section can start up DB instances to test against. Use your favorite testing framework to write some basic tests, like config loading, connecting to DBs and then validating that your functions do what you expect.
 
 ## Lint testing with eslint
 
-We ask that you [at least mostly] use the coding style in haraka/recommended. We've made it easy by publishing an eslint plugin that imports our rules automatically. Add an `.eslintrc.json` file to your project dir:
+We ask that you [at least mostly] use the coding style in haraka/recommended. We've made it easy by publishing an eslint plugin that imports our rules automatically. Add an `.eslintrc.yaml` file to your project dir:
 
-```json
-{
-  "plugins": [
-    "haraka"
-  ],
-  "extends": ["plugin:haraka/recommended"],
-  "rules": {
-    "no-console": 0
-  }
-}
+```yaml
+env:
+  node: true
+  es6: true
+  mocha: true
+
+plugins:
+  - haraka
+
+extends:
+  - eslint:recommended
+  - plugin:haraka/recommended
+
+rules:
+  indent: [2, 2, {"SwitchCase": 1}]
+
+root: true
+
+globals:
+  OK: true
+  CONT: true
+  DENY: true
+  DENYSOFT: true
+  DENYDISCONNECT: true
+  DENYSOFTDISCONNECT: true
 ```
 
 and add these two lines in the `scripts` section of package.json:
 
 ```js
-    "lint": "./node_modules/.bin/eslint *.js test/**/*.js",
-    "lintfix": "./node_modules/.bin/eslint --fix *.js test/**/*.js",
+    "lint": "npx eslint *.js test/*.js",
+    "lintfix": "npx eslint --fix *.js test/*.js",
 ```
 
-Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`. With Travis-CI enabled lint testing happens automatically (see the .travis.yml above) on every PR. This means that anyone submitting PRs against your plugin will have their changes linted automatically. It reduces errors and bugs and saves everyone time.
+Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`.
 
 I also add `"eslint:recommended"` to the extends section and find it helpful. You may consider it too.
 
@@ -129,36 +116,11 @@ If you want a codeclimate badge to display in your README, you'll need to specif
 engines: 
   eslint:
     enabled: true
-    channel: "eslint-3"
+    channel: "eslint-6"
     config:
-      config: ".eslintrc.json"
+      config: ".eslintrc.yaml"
 
 ratings:
    paths:
    - "**.js"
-```
-
-## Windows Compatibility
-
-We do our Windows testing on [Appveyor](https://www.appveyor.com). It must be configured in an appveyor.yml file like this:
-
-```yaml
-environment:
-  nodejs_version: "4"
-
-install:
-  - npm install
-
-before_build:
-build: off
-after_build:
-
-before_test:
-  - node --version
-  - npm --version
-
-test_script:
-  - node run_tests
-
-after_test:
 ```
