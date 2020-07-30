@@ -4,7 +4,7 @@ Before writing a new plugin, first check the [Plugin Registry](https://github.co
 
 # Nomenclature
 
-Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaging most plugins and the `haraka-plugin` prefix is the nomenclature we're using.
+Use the `haraka-plugin-[UNIQUE]` naming style. We're moving towards npm packaging most plugins and the `haraka-plugin` prefix is the nomenclature.
 
 ## package plugin for release on npm.
 
