@@ -12,7 +12,7 @@ Clone the [haraka-plugin-template](https://github.com/haraka/haraka-plugin-templ
 
 Or set up the plugin directory yourself:
 
-````
+```sh
 mkdir haraka-plugin-example && cd haraka-plugin-example
 touch index.js       // plugin code goes here
 mkdir config test
@@ -23,7 +23,7 @@ echo "# 1.0.0 - $(date +%Y-%m-%d)" > Changes.md
 npm init
 npm install --save <npm modules your plugin requires>
 npm install --save-dev haraka-test-fixtures eslint eslint-plugin-haraka
-````
+```
 
 ## config loading
 
