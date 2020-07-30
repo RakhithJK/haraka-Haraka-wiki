@@ -17,7 +17,7 @@ mkdir haraka-plugin-example && cd haraka-plugin-example
 touch index.js       // plugin code goes here
 mkdir config test
 echo '[main]' > config/example.ini
-echo "var fixtures = require('haraka-test-fixtures');" > test/main.js
+echo "const fixtures = require('haraka-test-fixtures');" > test/main.js
 echo '# haraka-plugin-example' > README.md
 echo "# 1.0.0 - $(date +%Y-%m-%d)" > Changes.md
 npm init
