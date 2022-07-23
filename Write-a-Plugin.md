@@ -31,11 +31,10 @@ Use this standard method for config loading:
 
 ```js
 exports.register = function () {
-    var plugin = this;
-    plugin.load_example_ini();
+    this.load_example_ini();
 }
 exports.load_example_ini = function () {
-    var plugin = this;
+    const plugin = this;
     plugin.cfg = plugin.config.get('example.ini', function () {
         plugin.load_example_ini();
     });
@@ -51,7 +50,7 @@ If you have true/false booleans in your config, declare them and optionally, the
 
 ```js
 exports.load_example_ini = function () {
-    var plugin = this;
+    const plugin = this;
     plugin.cfg = plugin.config.get('example.ini', {
         booleans: [
             '+enabled',               // plugins.cfg.main.enabled=true
@@ -100,8 +99,8 @@ globals:
 and add these two lines in the `scripts` section of package.json:
 
 ```js
-    "lint": "npx eslint *.js test/*.js",
-    "lintfix": "npx eslint --fix *.js test/*.js",
+    "lint": "npx eslint *.js test",
+    "lintfix": "npx eslint --fix *.js *.js",
 ```
 
 Now you can lint test with `npm run lint` and correct any lint issues automatically with `npm run lintfix`.
@@ -116,7 +115,7 @@ If you want a codeclimate badge to display in your README, you'll need to specif
 engines: 
   eslint:
     enabled: true
-    channel: "eslint-6"
+    channel: "eslint-8"
     config:
       config: ".eslintrc.yaml"
 
