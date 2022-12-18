@@ -63,3 +63,4 @@ fe80::d250:99ff:fe74:58aa
 ## Performance improvements
 
 - [lots of recipients cause major problems](/haraka/Haraka/issues/2325)
+    - [Delete qfiles if outbound queue timeout occurs](https://github.com/haraka/Haraka/pull/2482)
